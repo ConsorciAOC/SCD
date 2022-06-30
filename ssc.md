@@ -1,2244 +1,1845 @@
+![Shape2](RackMultipart20220630-1-6kytqz_html_6f1bdbd5e15159df.gif) ![Shape3](RackMultipart20220630-1-6kytqz_html_c8bac1e78d20a1be.gif) ![Shape1](RackMultipart20220630-1-6kytqz_html_34b9f772e3098a80.gif)
 
+# **DI - Signador Centralitzat (SSC)**
 
-**DI - Sign= ador Centralitzat (SSC)**
+![](RackMultipart20220630-1-6kytqz_html_f82d96c26cc03594.png)
 
-<= /p>
+![Shape5](RackMultipart20220630-1-6kytqz_html_7cc993dc0b22ceb9.gif) ![](RackMultipart20220630-1-6kytqz_html_e7cf959e7fe4dc1d.png)
 
-Realitzat per: Consorci AOC –= Servei Eines de Signa= tura
+Realitzat per: Consorci AOC – Servei Eines de Signatura
 
 Versió: 1.3.3
 
-Fecha: 30/= 06/2022  
+Fecha: 6/30/22
 
-  
+**Control del document**
 
-                                                 =                                           
+**Informació general**
 
-                                                 =                                           
-
-  
-
-**Control del** **document**
-
-**Informació** **general**
-
-**Título:**
-
-GuiaIntegracioSSC.v1.3.3.docx
-
-**Creat** **per:**
-
-Consorci AOC= – Servei Eines de Signatu= ra
-
-**Nom** **del documento:**
-
-<= /span><= span lang=3DEN-US style=3D'mso-bidi-font-size:10.0pt;font-family:"Calibri",san= s-serif; mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-no-pro= of: yes'>GuiaIntegracioSSC.v1.3.3.docx<= /span>
+| **Título:** | RackMultipart20220630-1-6kytqz.docx |
+| --- | --- |
+| **Creat per:** | Consorci AOC – Servei Eines de Signatura |
+| **Nom del documento:** | RackMultipart20220630-1-6kytqz.docx |
 
 **Histórico de revisiones**
 
-**Versió**
-
-**Data**
-
-**Autor**
-
-**Comentaris**
-
-1.3.2
-
-26/10/2016
-
-Servei Eiunes de Signatura
-
-\= Actualització\= de contingut.
-
- <= /o:p>
-
- <= /o:p>
-
-  
+| **Versió** | **Data** | **Autor** | **Comentaris** |
+| --- | --- | --- | --- |
+| 1.3.2 | 26/10/2016 | Servei Eiunes de Signatura | Actualització de contingut. |
+|
+ |
+ |
+ |
+ |
 
 Index
 
-[1           Introducció. 4](3D"#_Toc483913121")<= /span><= /span>
+[1Introducció 4](#_Toc483913121)
 
-[2           URLS de l’SSC. 5](3D"#_Toc483913122")<= /span><= /span>
+[2URLS de l&#39;SSC 5](#_Toc483913122)
 
-[2.1     PREPRODUCCIÓ.. 5](3D"#_Toc483913123")<= /span>
+[2.1PREPRODUCCIÓ 5](#_Toc483913123)
 
-[2.2     PRODUCCIÓ.. 5](3D"#_Toc483913124")<= /span>
+[2.2PRODUCCIÓ 5](#_Toc483913124)
 
-[2.3     Connexió. 5](3D"#_Toc483913125")<= /span>
+[2.3Connexió 5](#_Toc483913125)
 
-[2.3.1 Habilitar la propietat de JVM.. 6](3D"#_Toc483913126")<= /span>
+[2.3.1Habilitar la propietat de JVM 6](#_Toc483913126)
 
-[2.3.2 Habilitar la propietat com a variable d’entorn. 6](3D"#_Toc483913127")<= /span>
+[2.3.2Habilitar la propietat com a variable d&#39;entorn 6](#_Toc483913127)
 
-[3           SmartWrapper 7](3D"#_Toc483913128")<= /span><= /span>
+[3SmartWrapper 7](#_Toc483913128)
 
-[3.1     L’API SmartWrapper 7](3D"#_Toc483913129")<= /span>
+[3.1L&#39;API SmartWrapper 7](#_Toc483913129)
 
-[3.2     Accés a l’SSC mitjançant SmartWrapper 7](3D"#_Toc483913130")<= /span>
+[3.2Accés a l&#39;SSC mitjançant SmartWrapper 7](#_Toc483913130)
 
-[3.3     Classes de l’API SmartWrapper 8](3D"#_Toc483913131")<= /span>
+[3.3Classes de l&#39;API SmartWrapper 8](#_Toc483913131)
 
-[3.3.1 Classe per gestionar peticions SmartWrapper de signatura. 8](3D"#_Toc483913132")<= /span>
+[3.3.1Classe per gestionar peticions SmartWrapper de signatura 8](#_Toc483913132)
 
-[3.3.2 Classe per gestionar respostes SmartWrapper de signatura. 8](3D"#_Toc483913133")<= /span>
+[3.3.2Classe per gestionar respostes SmartWrapper de signatura 8](#_Toc483913133)
 
-[3.3.3 Classe SmartHeader per gestionar la capçalera. 8](3D"#_Toc483913134")<= /span>
+[3.3.3Classe SmartHeader per gestionar la capçalera 8](#_Toc483913134)
 
-[3.3.4 Classe Constants per gestionar constants<= span style=3D'color:windowtext;display:none;mso-hide:screen;mso-no-proof:yes; text-decoration:none;text-underline:none'>.](3D"#_Toc483913135") [8](3D"#_Toc483913135")<= /span>
+[3.3.4Classe Constants per gestionar constants 8](#_Toc483913135)
 
-[3.4     Configuració d’SmartWrapper 9](3D"#_Toc483913136")<= /span>
+[3.4Configuració d&#39;SmartWrapper 9](#_Toc483913136)
 
-[3.4.1 JDK\= . 9](3D"#_Toc483913137")<= /span>
+[3.4.1JDK 9](#_Toc483913137)
 
-[3.4.2 Llibreries del client 9](3D"#_Toc483913138")<= /span>
+[3.4.2Llibreries del client 9](#_Toc483913138)
 
-[3.5     Arxiu smartwrapper.properties. 9](3D"#_Toc483913139")<= /span>
+[3.5Arxiu smartwrapper.properties 9](#_Toc483913139)
 
-[4           Serveis de Signatura. 11](3D"#_Toc483913140")<= /span><= /span>
+[4Serveis de Signatura 11](#_Toc483913140)
 
-[4.1     Signatura CMS attached. 11](3D"#_Toc483913141")<= /span>
+[4.1Signatura CMS attached 11](#_Toc483913141)
 
-[4.2     Signatura XML enveloped. 13](3D"#_Toc483913142")<= /span>
+[4.2Signatura XML enveloped 13](#_Toc483913142)
 
-[4.3     Signatura XAdES-T detached a partir del hash d’un document 15](3D"#_Toc483913143")<= /span>
+[4.3Signatura XAdES-T detached a partir del hash d&#39;un document 15](#_Toc483913143)
 
-[4.4     Signatura de documents PDF. 16](3D"#_Toc483913144")<= /span>
+[4.4Signatura de documents PDF 16](#_Toc483913144)
 
-[4.4.1 Paràmetres de signatura visible. 19](3D"#_Toc483913145")<= /span>
+[4.4.1Paràmetres de signatura visible 19](#_Toc483913145)
 
-[5           Gestió de dades de volum gran. 29](3D"#_Toc483913146")<= /span><= /span>
+[5Gestió de dades de volum gran 29](#_Toc483913146)
 
-[5.1     Gestió de peticions amb dades de gran tamany. 29](3D"#_Toc483913147")<= /span>
+[5.1Gestió de peticions amb dades de gran tamany 29](#_Toc483913147)
 
-[5.2     Gestió de respostes amb dades de gran tamany. 30](3D"#_Toc483913148")<= /span>
+[5.2Gestió de respostes amb dades de gran tamany 30](#_Toc483913148)
 
-[5.3     Exemple de gestió en arxius per generació d’una signatura XAdES-BES enveloping. 31](3D"#_Toc483913149")<= /span>
+[5.3Exemple de gestió en arxius per generació d&#39;una signatura XAdES-BES enveloping 31](#_Toc483913149)
 
-[6           Exemple d’ús amb SoapUI 32](3D"#_Toc483913150")<= /span><= /span>
+[6Exemple d&#39;ús amb SoapUI 32](#_Toc483913150)
 
-[6.1     Importar un projecte. 32](3D"#_Toc483913151")<= /span>
+[6.1Importar un projecte 32](#_Toc483913151)
 
-[6.2     Afegir certificat PKCS#12. 32](3D"#_Toc483913152")<= /span>
+[6.2Afegir certificat PKCS#12 32](#_Toc483913152)
 
-  
+# 1Introducció
 
-1&nb= sp;      Introducció
-==========================
+El Signador Centralitzat és la solució que dóna cobertura al concepte de sistema de signatura electrònica per a l&#39;actuació administrativa automatitzada, tal com es descriu a la LAECSP (art.18, Llei 11/2007). Permet la custòdia i ús posterior de segells electrònics de les administracions públiques, òrgans o entitats de dret públic de Catalunya que ho sol·licitin, agilitzant la posada en marxa d&#39;un sistema automatitzat de signatura electrònica de documents des d&#39;un dispositiu remot. En aquesta URL es pot consultar la informació del servei : [https://www.aoc.cat/serveis-aoc/signador-centralitzat/](https://www.aoc.cat/serveis-aoc/signador-centralitzat/)
 
-El Signador Centralitzat és la solució que dóna cobertura al concepte de sistema de signatura electrònica per a l’actuació administrativa automatitzada, tal com es descriu a la LAECSP (art.18, Llei 11/2007). Permet la custòdia i ús posterior de segells electrònics de les administracions públiques, òrgans o entitats de dret públic de Catalunya qu= e ho sol·licitin, agilitzant la posada en marxa d’un sistema automatitzat de signatura electrònica de documents des d’un dispositiu remot. En aquesta UR= L es pot consultar la informació del servei : [https://www.aoc.cat/servei= s-aoc/signador-centralitzat/](3D"https://www.aoc.cat/serveis-aoc/signador-centralitzat/") \=
+Les claus associades al segell electrònic, resideixen en magatzems de claus protegits per un dispositiu criptogràfic segur (HSM). El dispositiu està certificat sota els criteris de Common Critera EAL4+, oferint les màximes garanties en matèria de seguretat i custòdia de claus.
 
-Les claus associades al segell electrònic, resideixen en magatzems de c= laus protegits per un dispositiu criptogràfic segur (HSM). El dispositiu està certificat sota els criteris de Common Critera EAL4+, oferint les màximes garanties en matèr= ia de seguretat i custòdia de claus.
+La guia bàsica d&#39;integració al Servei de Signatura Centralitzada (SSC) és un document que va dirigit a desenvolupadors que vulguin integrar les seves aplicacions de gestió amb l&#39;SSC de l&#39;AOC.
 
-La guia bàsica d’integració al Servei de Signatura Cen= tralitzada (SSC) és un document que va dirigit a desenvolupadors<= /span> que vulguin integrar les s= eves aplicacions de gestió amb l’SSC de l’AOC.
+El lector d&#39;aquest document ha de ser un professional amb coneixements en programació avançada en el llenguatge Java. És molt recomanable disposar també de coneixement sobre Webservices, missatgeria SOAP, WS-Security, ús de certificats i signatures digitals.
 
-El le= ctor d’aquest document ha de s= er un professional amb coneixements en programació avançada en el llenguatge\= Java. És molt recomanable disposar també de coneixem= ent sobre Webservices, missatg= eria SOAP, WS-Security, ús de c= ertificats i signatures digitals.
+L&#39;objectiu d&#39;aquest document és oferir una guia bàsica d&#39;integració amb l&#39;SSC mitjançant tecnologia Java
 
-L’objectiu d’aquest document és oferir una guia bàsica d’integració amb l’SSC mitjançant tecnologia Java
+La disposició de capitols és la següent:
 
-La disposició de capitols és la següent:\=
+Al capítol 2 s&#39;indiquen les URLs d&#39;accés als Webservices de signatura de l&#39;SSC. Al capítol 3 es descriu l&#39;SmartWrapper, API d&#39;integració a l&#39;SSC. Al capítol 4 es descriu com accedir als serveis de creació de signatura mitjançant SmartWrapper, amb codi d&#39;exemple. També s&#39;indica com parametritzar la signatura visible de documents PDF. Finalment, al capítol 5 es descriu la gestió de dades de gran volum amb l&#39;API SmartWrapper
 
-Al capítol 2 s’indiquen les U= RLs d’accés als Webservices de signatura de l’SS= C. Al capítol 3 es descriu l’= SmartWrapper, API d’integració a l’SSC. Al capítol 4 es descriu com accedir als serveis de creació de signatura mi= tjançant SmartWrapper, amb <= span class=3DSpellE>codi d’exemple. També s’indica com parametritzar la signatura visible de documents PDF. Finalment, al capítol 5 es descr= iu la gestió de dades de gran volum amb l’API SmartWrapper
+L&#39;accés al servei es fa mitjançant canal segur SSL amb autenticació de client. Les següent són les URLs per accedir al Servei de Signatura Centralitzada pels entorns de PREPRODUCCIÓ i PRODUCCIÓ.
 
-L’accés al servei es fa mitjançant canal segur SSL amb autenticació de client. Les següent són les URLs per accedir al Servei de Signatura Centralitzad= a pels entorns de PREPRODUCCIÓ i PRODUCCIÓ.
+# 2URLS de l&#39;SSC
 
-                                                 =                                                                            =                               
+L&#39;accés al servei es fa mitjançant canal segur SSL amb autenticació de client. Les següent són les URLs per accedir al Servei de Signatura Centralitzada pels entorns de PREPRODUCCIÓ i PRODUCCIÓ.
 
-2&nb= sp;      URLS de l= ’SSC
-==============================
+## 2.1PREPRODUCCIÓ
 
-L’accés al servei es fa mitjançant canal segur SSL amb autenticació de client. L= es següent són les URLs per accedir al Servei de Signatura Centralitzad= a pels entorns de PREPRODUCCIÓ i PRODUCCIÓ.
+La URL d&#39;accés al Webservice de signatura de l&#39;SSC a l&#39;entorn de PREPRODUCCIÓ mitjançant certificat és:
 
-2.1&= nbsp;     PREPRODUCCIÓ
-----------------------------
+[https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert](https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert)
 
-La URL d’accés al Webservice<= /span> de signatura de l’SSC a l’= entorn de PREPRODUCCIÓ mitjançant certificat és:
+## 2.2PRODUCCIÓ
 
-[https://ssc.preproduccio.catcert.ca= t:8443/trustedx-sgw/SignCert](3D"https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert")
+La URL d&#39;accés al Webservice de signatura de l&#39;SSC a l&#39;entorn de PRODUCCIÓ mitjançant certificat és:
 
-2.2&= nbsp;     PRODUCCIÓ<= /h2>
+[https://ssc.catcert.cat:8443/trustedx-sgw/SignCert](https://ssc.catcert.cat:8443/trustedx-sgw/SignCert)
 
-La URL d’accés al Webservice<= /span> de signatura de l’SSC a l’= entorn de PRODUCCIÓ mitjançant ce= rtificat és:
+## 2.3Connexió
 
-[https://ssc.catcert.cat:8443/truste= dx-sgw/SignCert](3D"https://ssc.catcert.cat:8443/trustedx-sgw/SignCert")
+Els protocols utilitzats per realitzar les connexions SSL depenen de la versió de Java amb la qual s&#39;executa l&#39;aplicació. Per defect SmartWrapper utilitza protocols segurs per xifrar la comunicació amb el servidor utilitzant TLS amb la versió 1.1 o 1.2. D&#39;altra banda, les versions de TLS per defecte que s&#39;utilitzen en cada versió de Java varien, tal com mostra la següent taula:
 
+![](RackMultipart20220630-1-6kytqz_html_eba657a890c2c4cb.png)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Per tal motiu, per a versions anteriors de Java 1.7.XX cal habilitar l&#39;ús de TLSv1.0 per a realitzar les comunicacions SSL. Hi ha dues formes d&#39;habilitar aquest protocol, mitjançant una variable global al sistema o amb una variable a la màquina virtual de Java (JVM).
 
-2.3&= nbsp;     Connexió
-------------------------
+### 2.3.1Habilitar la propietat de JVM
 
-Els protocols utilitzats per realitzar = les connexions SSL depenen de= la versió de Java amb la qual s'executa l'aplicació. Per defect <= span class=3DSpellE>SmartWrapper utilitza protocols segurs per xifrar la comunicació amb el servidor utilitzant TLS amb la versió 1.1 o 1.2. = D'altra banda, les versions de TLS per defecte que s'util= itzen en cada versió de Java var= ien, tal com mostra la <= span class=3DSpellE>següent taula:
+Abans de fer la connexió amb TrustedX (mètode send) cal introduir el següent codi:
 
-Per tal motiu, per a versions anteriors de Java 1.7.XX cal habilitar l'ús de TLSv1.0 per a= realitzar les comunicacions SSL. Hi ha dues formes d’habili= tar aquest protocol, mitjançant una variable global al sistema o amb una variable a la màquina virtual de Java (JVM).
+System.setProperty(&quot;PropertyAllowTls10AsClient&quot;, &quot;true&quot;);
 
-  
+Aquesta propietat habilitarà l&#39;ús de TLSv1.0 a la màquina virtual de Java per a l&#39;aplicació de SmartWrapper.
 
-\=  
+### 2.3.2Habilitar la propietat com a variable d&#39;entorn
 
-### 2.3.1       Habilitar la p= ropietat de JVM<= /span>
+Depenent del sistema operatiu, la configuració de variables d&#39;entorn difereix. Cal afegir la variable d&#39;entorn PropertyAllowTls10AsClient amb valor true.
 
-Abans de fer\= la connexió amb TrustedX (mètode send) cal introdui= r el següent codi:
+## 2.4
 
-System.setProperty("PropertyAllowTl= s10AsClient", "true");
+# 3SmartWrapper
 
-Aquesta propietat habilitarà l'ús de TLSv1.= 0 a la màquina virtual de Java per a l'= aplicació de SmartWrapper.
+En aquest capítol oferim una versió general de l&#39;API SmartWrapper proporcionada per accedir a l&#39;SSC.
 
-### 2.3.2       Habilitar la p= ropietat \= com a variable d’entorn
+## 3.1L&#39;API SmartWrapper
 
-Depenent del sistema operatiu, la configuració de variables \= d’entorn difereix. Cal afegir la variable d’entorn PropertyAllowTls10AsClient amb valor <= /span>true.
+SmartWrapper és una API desenvolupada sobre Axis per crear aplicacions client sense necessitat d&#39;aprofundir en la complexitat d&#39;Axis (permet també l&#39;accés a estructures Axis d&#39;ús avançat). SmartWrapper permet generar aplicacions Java senzilles, i amb poques línies de codi.
 
-\=  
+![](RackMultipart20220630-1-6kytqz_html_6fd5d0ba8d10d6d4.gif)
 
-2.4&= nbsp;      
------------------
+## 3.2Accés a l&#39;SSC mitjançant SmartWrapper
 
-3      = S= martWrapper
-=======================
-
-En aquest capítol <= span class=3DSpellE>oferim una versió general= de l’API SmartWrapper propor= cionada per accedir a l’SSC\= .
-
-3.1      L’API SmartWrapper
----------------------------
-
-SmartWrapper és una API desenvolupada = sobre Axis per crear aplicacions client sense necessitat d’aprofundir en la complexitat d’Axis (permet també l’accés a estructures Axis d’ús<= /span> avançat). SmartWrapper permet generar aplicacions Java senzilles, i amb poques <= span class=3DSpellE>línies de codi.
-
-3.2      A= ccés a l’SSC mitjançant SmartWrapper
-------------------------------------------------
-
-A continuació resumim els passos necessaris per enviar una \= petició a l’SSC, obtenir la= resposta i consultar si s’ha processat correctament.
+A continuació resumim els passos necessaris per enviar una petició a l&#39;SSC, obtenir la resposta i consultar si s&#39;ha processat correctament.
 
 Per invocar el servei i avaluar la resposta:
 
-1.&n= bsp;     Creem= una instància de la classe= SmartSig= nRequest corresponent al servei invocat.
+1. Creem una instància de la classe SmartSignRequest corresponent al servei invocat.
+2. Recuperem l&#39;objecte Stub de la classe Axis mitjançant el mètode getStub.
+3. Utilitzem el mètode setHeader per a l&#39;objecte Stub afegint els tags (Rol i Dispositari).
+4. Creem una instància de la classe Request corresponent al servei invocat.
+5. Realitzem les operacions set necessàries per construir una petició vàlida.
 
-2.&n= bsp;     Recup= erem l’objecte Stub de l= a classe Axis mitjançant el= mètode getStub.
+**Important** : A la petició hem de definir tant el perfil escollit (mitjançant el mètode setProfile) com els paràmetres adequats a aquell perfil.
 
-3.      Utilitzem\= el mètode setHeader per a l’objecte Stub afegint els tags (Rol i Dispositari).
+1. Enviem la petició (mitjançant la operació send) per obtenir un objecte del tipus Response.
+2. Consultem, mitjançant els mètodes de l&#39;objecte Response, el resultat de la petició. Si la petició ha sigut processada correctament, obtenim el valor dels paràmetres retornats amb les mètodes get del mateix objecte Response.
 
-4.&n= bsp;     Creem= una instància de la classe= Request<= /span> corresponent al servei invocat.
+## 3.3Classes de l&#39;API SmartWrapper
 
-5.&n= bsp;     Reali= tzem les operacions set necessà= ries per construir una petició \= vàlida.
+En aquest punt descrivim les classes utilitzades per l&#39;API SmartWrapper.
 
-**Important**: A la petició hem de d= efinir tant el perfil escollit (= mitjançant el mètode setProfi= le) com els paràmetres adequats a aquell p= erfil.
+### 3.3.1Classe per gestionar peticions SmartWrapper de signatura
 
-6.&n= bsp;     Envie= m la petició (mitjançant\= la operació send) per= obtenir un objecte del tipus Response.
+La classe de l&#39;API SmartWrapper que serveix per gestionar peticions de signatura, és la següent:
 
-7.&n= bsp;     Consu= ltem, mitjançant els mètodes de l’objecte Response, el = resultat de la petició. S= i la petició ha sigut processada correctament, = obtenim el valor dels paràmetres retornats amb les mètodes get del mateix objecte Response.
-
-  
-
-\=  
-
-3.3      C= lasses de l’API SmartWrapper
-----------------------------------------
-
-En aquest punt descrivim les classes utilitzades per l’API SmartWrapper.=
-
-### 3.3.1=       = C= lasse per gestionar peticions SmartWrapper de signatura
-
-La classe de l’API SmartWrapper que serveix per gestionar peticions<= /span> de signatura, és la següen= t:
-
-o   <= /span>Serveis de signatura digital: SmartSignRequest
+- Serveis de signatura digital: SmartSignRequest
 
 Aquest classe inclou els següents mètodes:
 
-o   <= /span>Mètode send per = enviar la petició. Aquest = mètode retorna un objecte\= de la classe associada amb la resposta corresponent.
+- Mètode send per enviar la petició. Aquest mètode retorna un objecte de la classe associada amb la resposta corresponent.
 
-o   <= /span>Mètodes per assignar valors als paràmetres necessaris en cada petició= . Els noms d’aquests mètodes segueixen la sintaxi set<P= aram\>, on <Param\> és el nom del paràmetre al que = assignen valor (amb la pr= imera lletra en majúscules).
+- Mètodes per assignar valors als paràmetres necessaris en cada petició. Els noms d&#39;aquests mètodes segueixen la sintaxi set\&lt;Param\&gt;, on \&lt;Param\&gt; és el nom del paràmetre al que assignen valor (amb la primera lletra en majúscules).
 
-### 3.3.2=       = C= lasse per gestionar respostes SmartWrapper de signatura
+### 3.3.2Classe per gestionar respostes SmartWrapper de signatura
 
-La classe de l’API SmartWrapper per ge= stionar respostes de signatura, és la següent:
+La classe de l&#39;API SmartWrapper per gestionar respostes de signatura, és la següent:
 
-o   <= /span>Serveis de signatura digital: SmartSignResponse
+- Serveis de signatura digital: SmartSignResponse
 
-Aquesta classe inclou mètodes per consultar els paràmetr= es de la resposta. Els\= noms d’aquests mètodes segueixen la sintaxi get<Param&g= t;, on <Param\> és el nom del paràmetre el valo= r del qual es vol consultar (amb la primera lletra en = majúscules).
+Aquesta classe inclou mètodes per consultar els paràmetres de la resposta. Els noms d&#39;aquests mètodes segueixen la sintaxi get\&lt;Param\&gt;, on \&lt;Param\&gt; és el nom del paràmetre el valor del qual es vol consultar (amb la primera lletra en majúscules).
 
-### 3.3.3=       = C= lasse \= SmartHeader per gestionar la capçalera
+### 3.3.3Classe SmartHeader per gestionar la capçalera
 
-La classe SmartHea= der gestiona la capçalera de les peticions i inclou informació\= per la correcta autenticació al s= ervei. En concret, suporta autent= icació amb certificat.
+La classe SmartHeader gestiona la capçalera de les peticions i inclou informació per la correcta autenticació al servei. En concret, suporta autenticació amb certificat.
 
-Tanmateix, l’autenticació la portarem a terme sempre mitjançant certificat digital per l’a= plicació en concret que vol = consumir els serveis de l’SSC.
+Tanmateix, l&#39;autenticació la portarem a terme sempre mitjançant certificat digital per l&#39;aplicació en concret que vol consumir els serveis de l&#39;SSC.
 
-Cal emfatitzar que = el servei inclou dos paràmetres nous a la capçalera: _Ro= l_ i _Dispositari_. Ambdós elements son presents al fitxer de propietats.
+Cal emfatitzar que el servei inclou dos paràmetres nous a la capçalera: _Rol_ i _Dispositari_. Ambdós elements son presents al fitxer de propietats.
 
-### 3.3.4=       = C= lasse \= Constants per gestionar constants
+### 3.3.4Classe Constants per gestionar constants
 
-La classe Constant= s defineix una sèrie de constants per facilitar l’ús de l’API i reduir el risc d’error tipogràfics.
+La classe Constants defineix una sèrie de constants per facilitar l&#39;ús de l&#39;API i reduir el risc d&#39;error tipogràfics.
 
-3.4      C= onfiguració \= d’SmartWrapper
------------------------------------------
+## 3.4Configuració d&#39;SmartWrapper
 
-### 3.4.1=       = JDK
+### 3.4.1JDK
 
-El sistema on s’executin ha de tenir instal•lada la **Java JDK1.4 (o superior).**
+El sistema on s&#39;executin ha de tenir instal•lada la **Java JDK1.4 (o superior).**
 
-### 3.4.2=       = L= libreries del client
+### 3.4.2Llibreries del client
 
-Les llibreries necessàries pel correcte = funcionament del client <= span class=3DSpellE>basat en SmartWrapper són:
+Les llibreries necessàries pel correcte funcionament del client basat en SmartWrapper són:
 
-o   <= /span>smartwrapper.jar
+- smartwrapper.jar
+- trustedx-client-axis-stub.jar
+- trustedx-client-axis.jar
+- trustedx-provider.jar
+- activation.jar
+- axis.jar
 
-o&nb= sp;  trustedx-client-axis-stub.jar
+Durant la compilació, aquest arxiu només és necessari per codificar i descodificar valors en Base64 mitjançant la classe org.apache.axis.encoding.Base64.
 
-o&nb= sp;  trustedx-client-axis.jar
+- commons-discovery-0.2.jar
+- commons-httpclient-3.0.1.jar
+- commons-logging-1.0.4.jar
+- jaxrpc.jar
+- log4j-1.2.8.jar
+- saaj.jar
+- wsdl4j-1.5.1.jar
+- xercesImpl.jar
+- xml-apis.jar
+- commons-collections-3.2.jar
+- commons-configuration.jar
+- commons-lang-2.6.jar
+- sfly-ssl.jar
 
-o&nb= sp;  trustedx-provider.jar
+## 3.5Arxiu smartwrapper.properties
 
-o&nb= sp;  activation.jar
+El directori des d&#39;on s&#39;executi el client, haurà d&#39;incloure l&#39;arxiu de configuració **smartwrapper.properties**.
 
-o   <= /span>axis.jar
+La següent taula defineix els paràmetres inclosos en l&#39;arxiu smartwrapper.properties:
 
-Durant la compilació, aquest arxiu només és necessari per co= dificar i descodificar valors en Base64 mitjançant la classe org.apache\= .axis.encoding.Base64.
+| Paràmetre | Valor |
+| --- | --- |
+| Truststore.active | true: per la connexió HTTP es farà servir el magatzem de certificats definit al paràmetre Truststore.path. false (valor por defecte): s&#39;utilitzarà el magatzem de certificats configurat en la màquina virtual de Java (si n&#39;hi ha). |
+| Truststore.path | Magatzem de certificats que s&#39;utilitzarà a la connexió HTTP (si el valor de Truststore.active és true). |
+| Comptabilitzada l&#39;obligació reconeguda | Contrasenya del magatzem de certificats definit a Truststore.path. |
+| Pagada | true: per la connexió HTTPS s&#39;utilitzarà el magatzem de claus definit al paràmetre Keystore.path.false (valor por defecte): s&#39;utilitzarà el magatzem de claus configurat en a màquina virtual de Java (si n&#39;hi ha). |
+| Keystore.path | Magatzem de claus utilitzat en la connexió HTTPS (si el valor de keystore.active és true). |
+| Keystore.password | Contrasenya del magatzem de claus definit a Keystore.path. |
+| Keystore.Type | Tipus de keystore: JKS (valor per defecte), JCEKS, o PKCS12 |
+| Proxy.active | true: per la connexió HTTP s&#39;utilitzarà un servidor Proxy.false: no s&#39;utilitzarà un servidor proxy. |
+| Proxy.host | Servidor proxy utilitzat (si proxy.active és true). |
+| Proxy.port | Port del servidor proxy. |
+| Proxy.username | Nom d&#39;usuari per accedir al servidor proxy (si requereix autenticació HTTP bàsica). |
+| Proxy.password | Contrasenya per accedir al servidor proxy (si requereix autenticació HTTP bàsica). |
+| Timeout | Temps d&#39;espera de la connexió HTTP (en mil·lisegons). |
+| Request.loadPath | Directori base dels arxius creats per enviar amb les peticions quan es maneguen dades de gran tamany. |
+| Response.savePath | Directori base dels arxius creats en rebre les respostes quan es maneguen dades de gran tamany. |
+| req-log.active | true: las peticions SOAP enviades es guardaran en arxius de log.false (valor por defecte): les peticions SOAP enviades no es guardaran en arxius de log. |
+| req-log.savePath | Directori on es guardaran els arxius de log amb les peticions enviades (si el valor de req-log.active és true). |
+| res-log.active | true: es guardaran arxius de log amb el contingut de les respostes rebudes.false (valor por defecte): no se guardaran arxius de log amb el contingut de les respostes rebudes. |
+| res-log.savePath | Directori on es guardaran els arxius de log amb les respostes rebudes (si el valor de res-log.active és true). |
+| authN.policy | Política d&#39;autenticació sol·licitada (opcional). |
+| Ssl.allowCriticalExts | true: durant la connexió SSL es permeten certificats de servidor amb qualsevol extensió marcada com a crítica.false (valor per defecte): durant la connexió SSL no es permeten certificats de servidor amb extensions crítiques. |
+| Ssl.noValidation | true: s&#39;anul·la la validació del certificat del servidor durant les connexions SSL.false (valor per defecte): es valida el certificat del servidor durant les connexions SSL. |
+| Ssl.validation | Algorisme per validar el certificat del servidor durant connexions SSL. L&#39;algorisme utilitzat ha d&#39;estar implementat per un proveïdor criptogràfic registrat. |
 
-o   <= /span>commons-discovery-0.2.jar
+# 4Serveis de Signatura
 
-o&nb= sp;  commons-httpclient-3.0.1.jar<= /p>
+En aquest capítol explicarem, fent ús de casos pràctics, com accedir als serveis de creació de signatura mitjançant SmartWrapper.
 
-o&nb= sp;  commons-logging-1.0.4.jar
+En tots aquests exemples farem servir l&#39;autenticació de client mitjançant certificat. A tal efecte, caldrà configurar l&#39;arxiu smartwrapper.properties amb les dades del keystore i el truststore. Pels exemples farem servir el keystore i el truststore de proves que distribuïm dins el pack d&#39;integració:
 
-o&nb= sp;  jaxrpc.jar
+# truststore
 
-o&nb= sp;  log4j-1.2.8.jar
+Truststore.active = true
 
-o&nb= sp;  saaj.jar
+Truststore.path = resources/truststore/catcert.truststore
 
-o&nb= sp;  wsdl4j-1.5.1.jar
+Truststore.password = catcert
 
-o&nb= sp;  xercesImpl.jar
+# keystore
 
-o&nb= sp;  xml-apis.jar
+Keystore.active = true
 
-o&nb= sp;  commons-collections-3.2.jar
+Keystore.path = resources/keystore/apptest/20100428\_111540\_CDA\_1\_cda\_c1\_policy.p12
 
-o&nb= sp;  commons-configuration.jar
+Keystore.password = 1234
 
-o&nb= sp;  commons-lang-2.6.jar
+Keystore.type = PKCS12
 
-o   <= /span>sfly-ssl.jar
+## 4.1Signatura CMS attached
 
-3.5      A= rxiu \= smartwrapper.properties
--------------------------------------------
-
-El directori des d’on s’executi el client, haurà d’incloure l’arxiu de configuració **smartwrapper.properties**.
-
-La següent taula defineix els paràmetres inclosos en l’arxiu\= smartwrapper.properties:
-
-Paràmetre
-
-Valor
-
-<= span lang=3DES style=3D'font-size:10.0pt;mso-bidi-font-size:11.0pt'>Truststore= .active
-
-true: per la connexió HTTP es farà servir el magatzem\= de certificats definit al = paràmetre Truststore.path.
-
-false (valor por defecte): s’utilitzarà el magatzem de certificats configurat = en la màquina virtual de Java (si n’= hi ha).
-
-Truststore.path
-
-Magatzem de certificats que s’utilitzarà a la co= nnexió HTTP (si el valor de Truststore.active és true).
-
-Comptabilitzada l’obligació reconeguda
-
-Contrasenya del magatzem de certificats definit a Truststore.path.
-
-Pagada
-
-true: per la connexió HTTPS s’utilitzarà el magatzem de claus definit al paràmetre Keystore.path\= .
-
-false (valor por defecte): s’utilitzarà el magatzem de claus configurat en a <= span class=3DSpellE>màquina virtual de Java (si n’= hi ha).
-
-Keystore.p= ath
-
-Magatzem de claus utilitzat en la <= span class=3DSpellE>connexió HTTPS (si el valor de keystore.active és true).
-
-Keystore.<= span class=3DGramE>password
-
-Contrasenya del magatzem de claus definit a Keystore.path\= .
-
-Keystore.T= ype
-
-Tipus de keystore: JKS (valor per defec= te), JCEKS, o PKCS12
-
-Proxy.acti= ve
-
-true: per la = connexió HTTP s’utilitzarà un servidor Proxy.
-
-false: no s’utilitzarà un servidor proxy.
-
-Proxy.host=
-
-Servidor prox= y utilitzat (si proxy.active és true).
-
-Proxy.port=
-
-Port del serv= idor proxy.
-
-Proxy.user= name
-
-Nom d’usuari per accedir al servidor proxy (si requereix autenticació HTTP bàsica).
-
-Proxy.password
-
-Contrasenya per accedir al servidor proxy (si \= requereix autenticació HTTP bàsica= ).
-
-Timeout
-
-Temps d’espera de la connexió\= HTTP (en mil·lisegons).
-
-Request.lo= adPath
-
-Directori base dels arxius creats per enviar amb les petic= ions quan es maneguen = dades de gran tamany.
-
-Response.s= avePath
-
-Directori base dels arxius creats en rebre les respostes quan es maneguen dades = de gran tamany.
-
-req-log.active
-
-true: las peticions SOAP enviades es guardaran en arxius de log.
-
-false (valor = por defecte): les peticions\= SOAP enviades no es guardaran en arxius de log.
-
-req-log.savePath
-
-Directori on es guardaran els arxius de log amb les <= span class=3DSpellE>peticions enviades
-
-(si el valor de req-<= span class=3DGramE>log.active és tru= e).
-
-res-log.active
-
-true: es guar= daran arxius de log amb\= el contingut de les respostes rebudes.
-
-false (valor = por defecte): no se guardaran arxius de log amb el contingut de les respostes rebudes.
-
-res-log.savePath
-
-Directori on es guardaran els arxius de log amb les <= span class=3DSpellE>respostes rebudes \=
-
-(si el valor = de res-log.active és true).
-
-authN.poli= cy
-
-Política d’autenticació sol·licitada (opcional).
-
-Ssl.allowC= riticalExts
-
-true: durant la connexió SSL = es permeten certificats de servidor amb qualsevol extensió marcada com a = crítica.
-
-false (valor = per defecte): durant la connexió SSL no es permeten certificats de servidor amb extensions crítiques.
-
-Ssl.noVali= dation
-
-true: s’anul·la la validació = del certificat del servidor durant= les connexions SSL.
-
-false (valor = per defecte): es valida el = certificat del servidor durant= les connexions SSL.
-
-Ssl.valida= tion
-
-Algorisme per validar = el certificat del servidor durant= connexions SSL. L’algorisme utilitzat ha d’estar implementat per un proveïdor criptogràfic registrat.=
-
-4      = Serveis de Signatura
-=============================
-
-En aquest capítol <= span class=3DSpellE>explicarem, fent ús de casos pràctics, com accedir als serveis de creació = de signatura mitjançant Smart= Wrapper.
-
-En tots aquests exemples farem servir l’autenticació de client mitjançant certificat. A tal efecte,= caldrà configurar l’arxiu\= smartwrapper.properties amb les dades del keystore i el truststore. Pels exemples farem servir el = keystore i el truststore = de proves que distribuïm dins el pack d’integració\= :
-
- \=
-
-\# t= ruststore
-
-<= span lang=3DEN-GB style=3D'mso-bidi-font-size:10.0pt;font-family:"Courier New"; mso-ansi-language:EN-GB;mso-fareast-language:CA'>Truststore.active =3D true
-
-<= span lang=3DEN-GB style=3D'mso-bidi-font-size:10.0pt;font-family:"Courier New"; mso-ansi-language:EN-GB;mso-fareast-language:CA'>Truststore.path =3D resources/truststore/catcert.truststore
-
-<= span lang=3DEN-GB style=3D'mso-bidi-font-size:10.0pt;font-family:"Courier New"; mso-ansi-language:EN-GB;mso-fareast-language:CA'>Truststore.password\= \=3D \= catcert
-
-\# keystore
-
-<= span lang=3DEN-GB style=3D'mso-bidi-font-size:10.0pt;font-family:"Courier New"; mso-ansi-language:EN-GB;mso-fareast-language:CA'>Keystore.active =3D true
-
-<= span lang=3DEN-GB style=3D'mso-bidi-font-size:10.0pt;font-family:"Courier New"; mso-ansi-language:EN-GB;mso-fareast-language:CA'>Keystore.path =3D resources/keystore/apptest/20100428\_111540\_CDA\_1\_cda\_c1\_policy.p12
-
-<= span lang=3DES style=3D'mso-bidi-font-size:10.0pt;font-family:"Courier New";mso-= fareast-language: CA'>Keystore.password =3D 1234
-
-<= span lang=3DES style=3D'mso-bidi-font-size:10.0pt;font-family:"Courier New";mso-= fareast-language: CA'>Keystore.type =3D PKCS12
-
-4.1      Signatura CMS attached
--------------------------------
-
-Amb el c= odi següent enviem una = petició SOAP de creació <= span class=3DSpellE>d’una signatura CMS attached (adjunta), i consultem la \= resposta obtinguda.
-
- \=
-
-import com.safelayer.trustedx.client.smartwrapper.\*; <= o:p>
-
-import org= .apache.axis.encoding.Base64;
-
-import org.apache.axis.message.SOAPHeaderElement;\=
-
-public class CmsSignature {
-
-       static final String _TRUSTEDX\_URL_ =3D "https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert";
-
-       static final String _SIGNER\_DN_ =3D "CN=3DDum= my";
-
-       static final String _RESULTMAJOR\_SUCCESS_ =3D &quo= t;urn:oasis:names:tc:dss:1.0:resultmajor:Success"; =
-
-       static final String _DIPOSITARI_ =3D "O=3D000= 0000000";
-
-       static final String _ROL_  \=3D "TEST";\=
-
-       public static byte\[\] signCms(byte\[\] data= ToSign) throws Exception {
-
-             SmartSig= nRequest sReq =3D new SmartSignRequest(_TRUSTEDX= \_URL_);
-
-             //\= afegeix la capçalera a la petició
-
-             Stub stub =3D (Stub) sReq.getStub();<= /span>
-
-             stub.setHeader(null, "Rol", ROL);
-
-             stub.setHeader(null, "Dipositari", DIPOSITARI);
-
-             //sig= natura CMS
-
-             sReq.set= Profile(Constants.Profile._CMSPKCS__7_);
-
-             //sig= natura attached
-
-             sReq.set= EnvelopingSignature(true);
-
-             //dad= es a signar
-
-             sReq.setInputBase64Data(Base64._encode_(dataToS= ign));
-
-             //selecció de<= /u> la clau de signatura
-
-             sReq.setKeySubjectName(<= i>SIGNER\_DN);
-
-             //enviament de= la petició
-
-             SmartSignResponse sResp =3D sReq.sen= d();
-
-             if (_RESULTMAJOR\_SUCCESS_.equals(sResp.getResultMajor())
-
-                    && sResp.getResultMinor() =3D=3D null) {
-
-                    //recuperació de la signatura
-
-                    String signatureBase64 = =3D sResp.getSignatureBase64();
-
-                    return Base64._decode_(signatureBase64);
-
-             } else {
-
-                    throw new Exception("Error signing:" + sResp.getResultMessage());
-
-             }
-
-       }
-
-       public static void main(String args\[\]) throws Exception {
-
-       String data =3D "data to sign.= ..";
-
-       byte\[\] signature =3D _sig= nCms_(data.getBytes());
-
-       }
-
-}
-
-Per construir la petició, invoquem els mètodes de la classe SmartSig= nRequest i SmartHea= der descrits a la taula següent:
-
-La classe SmartHea= der permet afegir paràmetres al element Header de l= a petició SOAP. Aquesta classe es comporta igual a tots<= /span> els següents exemples.
-
-Mètode
-
-Paràmetres
-
-Mètode
-
-Paràmetres
-
-getStub
-
-Obté l’objecte Stub de baix nivell Axis.
-
-getStub
-
-Obté l’objecte Stub de baix nivell Axis.
-
-setHeader
-
-Afegeix<= span lang=3DEN-GB style=3D'font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-ansi= -language: EN-GB'> l’element al node Header.<= /span>
-
-setHeader
-
-Afegeix<= span lang=3DEN-GB style=3D'font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-ansi= -language: EN-GB'> l’element al node Header.<= /span>
-
-D’altra band= a, la classe SmartSignRequest construeix l’element Body de la petició SOAP.
-
-Mètode
-
-Paràmetres
-
-setProfile <= /p>
-
-Constants.Profile.CMSPKCS7 per sele= ccionar el tipus de signatura CMS/PKCS#7.<= /span>
-
-setEnvelopingSignature <= /p>
-
-true per signatura attached (adjunta).
-
-setInputBase64Data
-
-Dades a signar, codificades en Base64.
-
-Amb els<= /span> mètodes de la classe SmartSig= nResponse obtenim la resposta a la = nostra petició de signatu= ra:
-
-Mètode
-
-Paràmetres
-
-getResultMajor 
-
-Indica si s’ha p= ogut processar la petició, independentment del resultat d’aquesta.
-
-getResultMinor <= /p>
-
-Detalls de la operació.
-
-getSignatureBase64  \=
-
-Signatura CMS codificada en Base64.
-
- 
--
-
-  
-
-\=  
-
-4.2&= nbsp;     Signatura XML e= nveloped
------------------------------------------
-
-Amb el c= odi següent enviem una = petició SOAP de creació <= span class=3DSpellE>d’una signatura XML enveloped (embolcallada), i consultem la resposta obtinguda.<= /o:p>
-
-import com.safelayer.trustedx.client.smartwrapper.\*; <= o:p>
-
-import org= .apache.axis.encoding.Base64;
-
-import org.apache.axis.message.SOAPHeaderElement;
-
-public class XmlEnvelopedSignature {
-
-       static final String _TRUSTEDX\_URL_ =3D "https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert";
-
-       static final String _SIGNER\_DN_ =3D "CN=3DDum= my";
-
-       static final String _RESULTMAJOR\_SUCCESS_ =3D &quo= t;urn:oasis:names:tc:dss:1.0:resultmajor:Success"; =
-
-       static final String _DIPOSITARI_ =3D "O=3D000= 0000000";
-
-       static final String _ROL_  \=3D "TEST";\=
-
-       public static byte\[\] signEnvelopedXml(byte\[\] data= ToSign) throws Exception {
-
-             SmartSig= nRequest sReq =3D new SmartSignRequest(_TRUSTEDX= \_URL_);
-
-             //\= afegeix la capçalera a la petició
-
-             Stub stub =3D (Stub) sReq.getStub();<= /span>
-
-             stub.setHeader(null, "Rol", ROL);
-
-             stub.setHeader(null, "Dipositari", DIPOSITARI);
-
-             //sig= natura XML simple
-
-             sReq.set= Profile(Constants.Profile._XADES_);
-
-             sReq.set= SignatureFormat(Constants.SignatureFormat._NOADES_);<= /o:p>
-
-             //sig= natura enveloped
-
-          =     sReq.setSignaturePlacement(Constants.SignaturePlacement._ENVELOPED_);
-
-             //\= posicionament de la signatura dins el document
-
-             sReq.setXmlEnvelopedXPathFirstChildOf("/");
-
-             //dad= es a signar
-
-             sReq.setInputXmlBase64(Base64= ._encode_(dataToSign)); <= /span>
-
-             //\= selecció de la clau de si= gnatura
-
-             sReq.setKeySubjectName(<= i>SIGNER\_DN);
-
-             //enviament de= la petició
-
-             SmartSignResponse sResp =3D sReq.sen= d();
-
-             if (_RESULTMAJOR\_SUCCESS_.equals(sResp.getResultMajor())
-
-             && sResp.getResultMinor() =3D=3D null) {
-
-                    //recuperació de la signatura
-
-                    String signature =3D sResp.getDocumentWithSignatureXml();
-
-                    return signature.getB= ytes();
-
-             } else {
-
-                    throw new Exception("Error signing:" + sResp.getResultMessage());
-
-             }
-
-       }
-
-       public static void main(String args\[\]) throws Exception {
-
-             String data =3D "<lib= rary Id=3D'c123tpe4ryta6di24'>"
-
-             +"<book Id=3D'1'>&= quot;
-
-             +" <title>The dark house</title>"
-
-             +"</book>"
-
-             +"<book Id=3D'2'>&= quot;
-
-             +" <title>The laundry</title>"
-
-             +"</book>"
-
-             +"</library>";
-
-             byte\[\] signature =3D _signEnvelopedXml_(data.get= Bytes());
-
-             System.<= i>out.println("sig= nature=3D" + new String(signature));
-
-       }
-
-}
-
-Per construir la petició, invoquem els mètodes de la classe SmartSig= nRequest descrits a la taula següent:
-
-Mètode
-
-Paràmetres
-
-setProfile
-
-Constants.Profile.XA= DES per selec= cionar el perfil de signatura XML (tant per signatures simples com = avançades).
-
-setSignatureFormat
-
-Format de la signatura. Pot tenir els següents valors:<= o:p>
-
-Signatura simple:
-
-Constants.SignatureF= ormat.NOADES
-
-Signatura AdES\-BES:\=
-
-Constants.SignatureFormat.BES
-
-Signatura AdES\-T:
-
-Constants.SignatureFormat.ES\_T
-
-Signatura AdES\-C:
-
-Constants.SignatureFormat.ES\_C
-
-Signatura AdES\-A:
-
-Constants.SignatureFormat.ES\_A
-
-setSignaturePlacement
-
-Constants.SignatureP= lacement.ENVELOPED per selec= cionar el tipus de signatura XML enveloped.
-
-Per seleccionar una signatura detached, farem servir el següent\= paràmetre:
-
-Constants.SignatureP= lacement.DETACHED
-
-I per seleccionar una signatura del tipus enveloping, farem servi= r el paràmetre:
-
-Constants.SignatureP= lacement.ENVELOPING
-
-setXmlEnvelopedXPathFirstChildOf\=
-
-Expressió XPath que indica on volem que s’incrusti la signatura generada. Per exemple, "/" per ubicar la signatura a continuació<= /span> del node arrel de= l document XML.
-
-setXmlReturnBase64
-
-true per obtenir la signatura codific= ada en Base64 (i evitar així pr= oblemes amb Axis a l’hora\= de serialitzar i deserialitzar signatures XML).
-
-setKeySubjectName
-
-Certificat amb el que generar la signatura.
-
-setInputXmlBase64
-
-Dades a signar, codificades en Base64.
-
-Amb els<= /span> mètodes de la classe SmartSig= nResponse obtenim la resposta a la = nostra petició de signatu= ra:
-
-Mètode
-
-Paràmetres
-
-getResultMajor 
-
-Indica si s’ha p= ogut processar la petició, independentment del resultat d’aquesta.
-
-getResultMinor <= /p>
-
-Detalls de la operació.
-
-getDocumentWithSignatureXml
-
-Signatura XML.
-
-getDocumentWithSignatureXmlBase64
-
-Signatura XML codificada en Base64.
-
-4.3      Signatura X= AdES\-T detached a partir del hash d’un document
-----------------------------------------------------------------------
-
-import com.safelayer.trustedx.client.smartwrapper.= \*;
-
-import org.apac= he.axis.encoding.Base64;
-
-import org.apache.axis.message.SOAPHeaderElement; =
-
-public class XAdESTDetachedSignature = {
-
-       \= static final String _\= TRUSTEDX\_URL_ =3D "https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCe= rt";
-
-       \= static final String _\= SIGNER\_DN_ =3D "CN=3DDummy";
-
-       \= static final String _\= RESULTMAJOR\_SUCCESS_ =3D "urn:oasis:names:tc:dss:1.0:resultm= ajor:Success";
-
-       \= static final String _\= DIPOSITARI_ =3D "O=3D0000000000";
-
-       \= static final String _ROL_  \=3D "TEST";
-
-       \=
-
-       \= public static byte\[\] signDetachedXAdEST(byte\[\] \= dataToSign) throws Exception {
-
-              =                         
-
-             <= /span>SmartSignRequest sReq\= =3D new SmartSignRequest(_TRUSTEDX\_URL_);
-
-             <= /span>//afegeix la \= capçalera a la petició
-
-             Stub stub =3D (Stub) sReq.getStub();
-
-             stub.setHeader(null, "Rol", ROL);
-
-             stub.setHeader(null, "Dipositari", DIPOSITARI);
-
-             <= /span>//signatura XML simple
-
-             <= /span>sReq.setProfile(Constants.Profile._XADES_);
-
-             <= /span>sReq.setSignatureFormat(Cons= tants.SignatureFormat._ES\_T_);
-
-             <= /span>//dades<= /u> a signar
-
-             <= /span>sReq.setInputHashDigest(data= ToSign.toString());
-
-             <= /span>sReq.setInputHashAlgorithm("sha1");
-
-             <= /span>//selecció de la clau de signatura
-
-             sReq= .setKeySubjectName(_SIGNER\_DN_); <= /span>            
-
-             //enviament de la petició
-
-             SmartSignResponse<= span lang=3DEN-GB style=3D'font-size:9.0pt;mso-bidi-font-size:10.0pt;font-fa= mily: "Courier New";mso-ansi-language:EN-GB'> sResp =3D sReq.send();
-
-             <= /span>if (_\= RESULTMAJOR\_SUCCESS_.equa= ls(sResp.getResultMajor())
-
-             <= /span>&& sResp.getResultMinor() =3D=3D null) {
-
-                    //recuperació de la signatura
-
-                    String signature =3D sRes= p.getSignatureXml();
-
-              =       return \= signature.getBytes();
-
-            } else {
-
-              =       throw new Exception("Error signing:" + <= span class=3DSpellE>sResp.getResultMessage());
-
-             <= /span>}
-
-       \= }
-
-       \=  
-
-       \= public static void main(String args\[\]) throws Exception {
-
-             <= /span>String data =3D "gYbYj9w6DofPvCfwqKKwXitsErA=3D"= ;
-
-             <= /span>byte\[\] signature =3D signDeta= chedXAdEST(data.getBytes());
-
-             <= /span>System.out.println("signature=3D" + new String(signature));
-
-       \= }
-
-} En aquest cas, expo= sem codi d’exemple per = generar una signatura XML avançada amb segell de temps, a = partir del resum criptogràfic (hash) d’un document.
-
-  
-
-\=  
-
-Per construir la petició, invoquem els mètodes:
-
-Mètode
-
-Paràmetres
-
-setInputHashDigest
-
-Hash de les dades a signar, codificat\= en Base64.
-
-setInputHashAlgorithm
-
-Algorisme de hash amb que s’ha calculat el resum anter= ior
-
-4.4      Signatura de documents PDF
------------------------------------
-
-Amb el codi següent enviem una petició de sig= natura d’un document PDF, fent signatura visible, i consul= tem la resposta obtinguda.
-
-**Important**: L’S= SC només suporta la signatura d’arx= ius PDF que utilitzin la versi= ó 1.5 del format PDF.
+Amb el codi següent enviem una petició SOAP de creació d&#39;una signatura CMS attached (adjunta), i consultem la resposta obtinguda.
 
 import com.safelayer.trustedx.client.smartwrapper.\*;
 
-import java.io.\*;=
-
-import org.apache\= .axis.encoding.Base64;
+import org.apache.axis.encoding.Base64;
 
 import org.apache.axis.message.SOAPHeaderElement;
 
-public class PdfSignatu= re {
+publicclass CmsSignature {
 
-       static final String TRUSTEDX\_URL =3D "https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert";
+staticfinal String _TRUSTEDX\_URL_ = &quot;https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert&quot;;
 
-       static final String SIGNER\_DN =3D "CN=3DDummy";
+staticfinal String _SIGNER\_DN_ = &quot;CN=Dummy&quot;;
 
-       static final String RESULTMAJOR\_SUCCESS =3D "urn:oasis:names:tc:dss:1.0:resultmajor:Success";
+staticfinal String _RESULTMAJOR\_SUCCESS_ = &quot;urn:oasis:names:tc:dss:1.0:resultmajor:Success&quot;;
 
-       static final String DIPOSITARI =3D "O=3D0000000000";=
+staticfinal String _DIPOSITARI_ = &quot;O=0000000000&quot;;
 
-       static final String ROL  =3D "TEST";
+staticfinal String _ROL_ = &quot;TEST&quot;;
 
-       public static byte\[\] signPdf(byte\[\] pdfToSign, String signatur= eInfo) throws Exception{   
+publicstaticbyte[] signCms(byte[] dataToSign) throws Exception {
 
-            =    SmartSignRequest sReq =3D= new SmartSignRequest(TRUSTEDX\_URL);
+SmartSignRequest sReq = new SmartSignRequest(_TRUSTEDX\_URL_);
 
-            =    //afegeix la capçalera a la petició
+//afegeixlacapçalera a lapetició
 
-               Stub \= stub =3D (Stub) sReq.getStub();<= /span>
+Stub stub = (Stub) sReq.getStub();
 
-            =    stub.setHeader(null, "= ;Rol", ROL);
+stub.setHeader(null, &quot;Rol&quot;, ROL);
 
-            =    stub.setHeader(null, "Dipositari", DIPOSITARI);
+stub.setHeader(null, &quot;Dipositari&quot;, DIPOSITARI);
 
-               //signatura d’un document PDF
+//signatura CMS
 
-               sReq.setProfil= e(Constants.Profile.PDF);
+sReq.setProfile(Constants.Profile._CMSPKCS7_);
 
-            =    //tipus de signatura
+//signatura attached
 
-               sReq.setSignatureType(Constants.SignatureType.CMS);
+sReq.setEnvelopingSignature(true);
 
-               //selecció de la clau de signatura
+//dades a signar
 
-               sReq.setKeySub= jectName(SIGNER\_DN);
+sReq.setInputBase64Data(Base64._encode_(dataToSign));
 
-            =    //PDF a signar
+//selecciódelaclaudesignatura
 
-            =    sReq.setInputPdfBase64Data(Base64.encode(pdfToSign));
+sReq.setKeySubjectName(_SIGNER\_DN_);
 
-               //configuració signatura visible
+//enviamentdelapetició
 
-               sReq.setPdfSignatureInfo(signatureInfo);
+SmartSignResponse sResp = sReq.send();
 
-               //enviament de la petició
+if (_RESULTMAJOR\_SUCCESS_.equals(sResp.getResultMajor())
 
-               SmartSignRespo= nse sRes= p =3D sReq.send();
+&amp;&amp; sResp.getResultMinor() == null) {
 
-            =   
+//recuperaciódelasignatura
 
-            =    if (RESULTMAJOR\_SUCCESS.equals(sResp.getResultMajor()) && sResp.getResultMinor() =3D=3D null) = {
+String signatureBase64 = sResp.getSignatureBase64();
 
-            =           return Base64.decode(sResp.getDocumentWithSignaturePdf\= ());
+return Base64._decode_(signatureBase64);
 
-            =    } else {
+} else {
 
-            =           throw new Exception("Error signing:" + sResp.getResultMessage());
-
-            =    }
-
-       }
-
-       public static void main(String arg= s\[\]) throws Exception {
-
-            =    String signatureInfo =3D
-
-            =    "<css:PdfSignatureInfo xmlns:css\=3D'http://www.safelayer.com/TWS'>" = +
-
-            =    "<css:PdfAttributes\><<= span class=3DSpellE>css:signatureAlg\>SHA1</css= :signatureAlg\>" +
-
-            =    " <css:validationMethod\>PPKMS</css:validationMethod\>" +
-
-            =    " <css:signaturePosition\>ADDLAST</css:signaturePosition\>" + <= /p>
-
-            =    " <css:params\>&l= t;css:reason\>Author</css:rea= son\></css:params\>" +
-
-            =    "</css:PdfAttributes\>"= ; +
-
-            =    "<css:Appearance\>" +=
-
-            =    " <css:Rect x0=3D'1= 00' y0=3D'50' x1=3D'520' y1=3D'150'/>" +
-
-            =    " <css:Background&g= t;<css:image encodeType\=3D'b= ase64'>" +
-
-             "<css:data>/9j/4AAQSkZJRg= ABAQEAYABgAAD/4QAWRXhpZgAASUkqAAgAAAAAAAAAAAD/2wBD" +
-
-             "AAgGBgcGBQgHBwcJCQgKDBQNDAsLDB= kSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hy" +
-
-             "c5PTgyPC4zNDL/2wBDAQkJCQwLDBgN= DRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy" +
-
-             "MjIyMjIyMjIyMjIyMjIyMjIyMjIyMj= L/wAARCAB+AMcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQ" +
-
-             "EAAAAAAAAAAAECAwQFBgcICQoL/8QA= tRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1Fh" +
-
-             "ByJxFDKBkaEII0KxwRVS0fAkM2Jygg= kKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1" +
-
-             "hZWmNkZWZnaGlqc3R1dnd4eXqDhIWG= h4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLD" +
-
-             "xMXGx8jJytLT1NXW19jZ2uHi4+Tl5u= fo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAA" +
-
-             "AAAAECAwQFBgcICQoL/8QAtREAAgEC= BAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEI" +
-
-             "FEKRobHBCSMzUvAVYnLRChYkNOEl8R= cYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZG" +
-
-             "VmZ2hpanN0dXZ3eHl6goOEhYaHiImK= kpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbH" +
-
-             "yMnK0tPU1dbX2Nna4uPk5ebn6Onq8v= P09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKK" +
-
-             "KACiiigAooooAKKKKACiiigAooooAK= KKKACiiigAooooAKKKKACiiigAqOeeO2t5biZtkUSF3Y" +
-
-             "9lAyTT6z/EH/ACLeqf8AXnL/AOgGgF= uUx4w0MjP2qX/wFl/+Jo/4TDQ/+fqX/wABZf8A4muWjk" +
-
-             "8u3QseAgyeuOM9qT7TGSMllz03Arkf= j/XFc3t32PSWATSdzqv+Ex0P/n6l/wDAWX/4mj/hMdD/" +
-
-             "AOfqX/wFl/8Aia5rP+cmkyN3X+dSsT= 5F/wBnLudOPF+iEgC6lyen+jS//E1Z/t/T/wC9cf8AgL" +
-
-             "L/APE1xx5K45w68+nzD/GvQl+7W9Of= OcWIoexlYzv7f0/+9cf+Asv/AMTR/b+n/wB64/8AAWX/" +
-
-             "AOJrRoyM1oc5nf2/p/8AeuP/AAFl/w= DiadHrunyOiCSVS7BF328igknAGStX+veszWcCG1P/AE" +
-
-             "+Qfn5goA1aKKKACiiigAooooAKKKKA= CiiigAooooAKKKKAErP8Qf8AIt6p/wBecv8A6Aa0O9Z+" +
-
-             "v/8AIt6p/wBekv8A6AaXQFucE4DC2R= zhdh2k9A2Bg/WobbbAWtbuJUkERJkXpIAeT9elXURZLW" +
-
-             "NSMqVBx74pFtYVbd5YJxj5jmuBux9B= yXSsUlOshFwbYj/aznFQ3t3qdlbtPKLbapA4z36VsEf5" +
-
-             "zSFFfh0DDsDyKSlrsU6btuyvZyTS2k= Ulx5ZZmRgE/ulhXcl9S/fbY4mwf3eeOM/4Vx2BhQBgBl" +
-
-             "HTHGRXoKgbRXVQd4s8vHL3kUXN+NzK= sePMAC+i45P1zSyy3oRhHEhcMPmJwCuf54q9jjFGOtbn" +
-
-             "CUma/wDNTaI9vmENx/D2qjfm6MMQug= gH22Ax49PMFbh+tZesnMVqMZ/0yD/0MUAatFFFABRRRQ" +
-
-             "AUUUUAFFFFABRRRQAUUUUAFFFFABUF= 7bLe2FxaMxVZ4mjLDqAwIz+tT0UAc2PCQCgDUp8AYHyL" +
-
-             "0/Kl/wCEU/6iM3/ftP8ACujoqPZx7G= vt6nc5z/hE/wDqJTf9+0/wo/4RT/qJT/8AftP8K6LNLm" +
-
-             "j2cew/rFX+Y53/AIRRSQTqE5wQfuL/= AIVr/Zbn/n+f/v2v+FW6M1SSWiM5zlN3kyp9muf+f5/+" +
-
-             "/a/4UfZrn/n+f/v2v+FW6KZJU+y3X/= P+/wD37X/CoZdNkuDF594zrHKkoGwDlTmtGigAooooAK" +
-
-             "KKKACiiigAooooAKKKKACiiigAoooo= AKKKKACiiigAooooAKKKKACkOaKX3oAiuJktoGlc4VRk" +
-
-             "1zMWrX1/rUCRNsiznZjqueSfw/nTvE= F/51wLWN/3acyY7n0qTwvZkyT3r9ztjz2Hf+WPwrPnbl" +
-
-             "ZHV7JRpc73OlopD1pa0OUKKKKACiii= gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA" +
-
-             "CqmpXYsrGWY/eAwo9W7CrVYGsebqOq= QadCflX55G/u/5B/Wk9tCoK71KWi6e99dNcTZMSOST2d" +
-
-             "u/4Zrq0RY1CooVR2FMtreO1t0hjGEQ= YFSmlGPKiqtRzlcO9FAoqjMKKKKACiiigAooooAKKKKA" +
-
-             "CiiigAooooAKKKKACiiigAooooAKKK= KAENU9PtDAsk8nM9w2+Q+noPwHFXCKWgAooooAKKKKAC" +
-
-             "iiigAooooAKKKKACiiigAooooAKKKK= ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA" +
-
-            =    "KKKKACiiigAooooAKKKKACiiigD/2Q=3D=3D</css:data\>" +
-
-            =    " <css:imageSize width=3D'200' height=3D'100'/>" +
-
-            =    " <css:position x= =3D'0' y=3D'0'/></css:image\></css:Background\>" +
-
-            =    " <css:Foreground&g= t;" +
-
-            =    " <css:image encodeType=3D'base64'><css:data>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAA= gGBgcGBQgHB" +
-
-             "wcJCQgKDBQNDAsLDBkSEw8UHRofHh0= aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL" +
-
-             "/2wBDAQkJCQwLDBgNDRgyIRwhMjIyM= jIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyM" +
-
-             "jIyMjIyMjIyMjIyMjL/wAARCAABAAE= DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAE" +
-
-             "CAwQFBgcICQoL/8QAtRAAAgEDAwIEA= wUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII" +
-
-             "0KxwRVS0fAkM2JyggkKFhcYGRolJic= oKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGl" +
-
-             "qc3R1dnd4eXqDhIWGh4iJipKTlJWWl= 5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1" +
-
-             "NXW19jZ2uHi4+Tl5ufo6erx8vP09fb= 3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgc" +
-
-             "ICQoL/8QAtREAAgECBAQDBAcFBAQAA= QJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzU" +
-
-             "vAVYnLRChYkNOEl8RcYGRomJygpKjU= 2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ" +
-
-             "3eHl6goOEhYaHiImKkpOUlZaXmJmao= qOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2" +
-
-              "Nna4uPk5ebn6Onq8vP09fb3+Pn6/9= oADAMBAAIRAxEAPwD3+iiigD//2Q=3D=3D</css:data>" +
-
-            =    " <css:imageSize wi= dth=3D'1' height=3D'1'/>" +
-
-            =    " <css:position x= =3D'0' y=3D'0'/></css:image\>" +
-
-            =    " <css:text\><css:properties color=3D'0 0 0' fontSize\=3D'10'/>" +
-
-            =    " <css:position x= =3D'12' y=3D'12'/>" +
-
-            =    " <css:SignatureInfos\>" +
-
-            =    " <css:signatureInfo title=3D' ' id=3D'Subject'/>" +
-
-            =    " <css:signatureInfo title=3D' ' id=3D'Date'/>" +
-
-            =    " </css:SignatureInfos\></css:text\></css:Foreground<= /span>>" +
-
-              " </css:Appearance\></css= :PdfSignatureInfo\>";
-
-            =   
-
-            =    //lectura del document PDF
-
-            =    File file =3D new File("unsigned.pdf");
-
-            =    FileInputStream fis =3D n= ew FileInputStream(file);
-
-            =    byte\[\] pdfToSign =3D new b= yte\[(int)file.length()\];
-
-            =    fis.read(pdfToSign);
-
-            =    fis.close();
-
-            =    byte\[\] signature =3D signPdf(pdfToSign, signatureInfo)= ;
-
-            =    //guardem el PDF signat en un fitxer<= /o:p>
-
-               java.io.FileOutputStream fos =3D new java.io.FileOutputStream("signed.pdf");
-
-            =    if (fos!=3Dnull) {
-
-            =           fos.write(signature);
-
-            =           fos.close<= /span>();
-
-               }
-
-       }
+thrownew Exception(&quot;Error signing:&quot; + sResp.getResultMessage());
 
 }
 
-  
+}
 
-\=  
+publicstaticvoid main(String args[]) throws Exception {
 
-Per construir la petició, invoquem els mètodes de la classe SmartSig= nRequest descrits a la taula següent:
+String data = &quot;data to sign...&quot;;
 
-Mètode
+byte[] signature = _signCms_(data.getBytes());
 
-Paràmetres
+}
 
-setProfile
+}
 
-Constants.Profile.PDF per seleccionar el perfil de signatura PDF.=
+Per construir la petició, invoquem els mètodes de la classe SmartSignRequest i SmartHeader descrits a la taula següent:
 
-setSignatureType
+La classe SmartHeader permet afegir paràmetres al element Header de la petició SOAP. Aquesta classe es comporta igual a tots els següents exemples.
 
-Format de la signatura: Constants.SignatureType.CMS
+| Mètode | Paràmetres | Mètode | Paràmetres |
+| --- | --- | --- | --- |
+| getStub | Obté l&#39;objecte Stub de baix nivell Axis. | getStub | Obté l&#39;objecte Stub de baix nivell Axis. |
+| setHeader | Afegeix l&#39;element al node Header. | setHeader | Afegeix l&#39;element al node Header. |
 
-setPdfSignatureInfo
+D&#39;altra banda, la classe SmartSignRequest construeix l&#39;element Body de la petició SOAP.
 
-Tipus de signatura desi= tjat. En aquest exemple\= incloem informació de <= span class=3DSpellE>l’aparença de la signatura per tal que sigui visible.
+| Mètode | Paràmetres |
+| --- | --- |
+| setProfile | Constants.Profile.CMSPKCS7 per seleccionar el tipus de signatura CMS/PKCS#7. |
+| setEnvelopingSignature | true per signatura attached (adjunta). |
+| setInputBase64Data | Dades a signar, codificades en Base64. |
 
-setInputPdfBase64Data
+Amb els mètodes de la classe SmartSignResponse obtenim la resposta a la nostra petició de signatura:
 
-Document PDF a signar codificat en Base64.
+| Mètode | Paràmetres |
+| --- | --- |
+| getResultMajor | Indica si s&#39;ha pogut processar la petició, independentment del resultat d&#39;aquesta. |
+| getResultMinor | Detalls de la operació. |
+| getSignatureBase64 | Signatura CMS codificada en Base64. |
 
-### 4.4.1=       = Paràmetres de signatura visible
+##
+
+
+## 4.2Signatura XML enveloped
+
+Amb el codi següent enviem una petició SOAP de creació d&#39;una signatura XML enveloped (embolcallada), i consultem la resposta obtinguda.
+
+import com.safelayer.trustedx.client.smartwrapper.\*;
+
+import org.apache.axis.encoding.Base64;
+
+import org.apache.axis.message.SOAPHeaderElement;
+
+publicclass XmlEnvelopedSignature {
+
+staticfinal String _TRUSTEDX\_URL_ = &quot;https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert&quot;;
+
+staticfinal String _SIGNER\_DN_ = &quot;CN=Dummy&quot;;
+
+staticfinal String _RESULTMAJOR\_SUCCESS_ = &quot;urn:oasis:names:tc:dss:1.0:resultmajor:Success&quot;;
+
+staticfinal String _DIPOSITARI_ = &quot;O=0000000000&quot;;
+
+staticfinal String _ROL_ = &quot;TEST&quot;;
+
+publicstaticbyte[] signEnvelopedXml(byte[] dataToSign) throws Exception {
+
+SmartSignRequest sReq = new SmartSignRequest(_TRUSTEDX\_URL_);
+
+//afegeixlacapçalera a lapetició
+
+Stub stub = (Stub) sReq.getStub();
+
+stub.setHeader(null, &quot;Rol&quot;, ROL);
+
+stub.setHeader(null, &quot;Dipositari&quot;, DIPOSITARI);
+
+//signatura XML simple
+
+sReq.setProfile(Constants.Profile._XADES_);
+
+sReq.setSignatureFormat(Constants.SignatureFormat._NOADES_);
+
+//signatura enveloped
+
+sReq.setSignaturePlacement(Constants.SignaturePlacement._ENVELOPED_);
+
+//posicionamentdelasignaturadins el document
+
+sReq.setXmlEnvelopedXPathFirstChildOf(&quot;/&quot;);
+
+//dades a signar
+
+sReq.setInputXmlBase64(Base64._encode_(dataToSign));
+
+//selecciódelaclaudesignatura
+
+sReq.setKeySubjectName(_SIGNER\_DN_);
+
+//enviamentdelapetició
+
+SmartSignResponse sResp = sReq.send();
+
+if (_RESULTMAJOR\_SUCCESS_.equals(sResp.getResultMajor())
+
+&amp;&amp; sResp.getResultMinor() == null) {
+
+//recuperaciódelasignatura
+
+String signature = sResp.getDocumentWithSignatureXml();
+
+return signature.getBytes();
+
+} else {
+
+thrownew Exception(&quot;Error signing:&quot; + sResp.getResultMessage());
+
+}
+
+}
+
+publicstaticvoid main(String args[]) throws Exception {
+
+String data = &quot;\&lt;library Id=&#39;c123tpe4ryta6di24&#39;\&gt;&quot;
+
++&quot;\&lt;book Id=&#39;1&#39;\&gt;&quot;
+
++&quot; \&lt;title\&gt;The dark house\&lt;/title\&gt;&quot;
+
++&quot;\&lt;/book\&gt;&quot;
+
++&quot;\&lt;book Id=&#39;2&#39;\&gt;&quot;
+
++&quot; \&lt;title\&gt;The laundry\&lt;/title\&gt;&quot;
+
++&quot;\&lt;/book\&gt;&quot;
+
++&quot;\&lt;/library\&gt;&quot;;
+
+byte[] signature = _signEnvelopedXml_(data.getBytes());
+
+System._out_.println(&quot;signature=&quot; + new String(signature));
+
+}
+
+}
+
+Per construir la petició, invoquem els mètodes de la classe SmartSignRequest descrits a la taula següent:
+
+| Mètode | Paràmetres |
+| --- | --- |
+| setProfile | Constants.Profile.XADES per seleccionar el perfil de signatura XML (tant per signatures simples com avançades). |
+| setSignatureFormat | Format de la signatura. Pot tenir els següents valors:Signatura simple:Constants.SignatureFormat.NOADESSignatura AdES-BES:Constants.SignatureFormat.BESSignatura AdES-T:Constants.SignatureFormat.ES\_TSignatura AdES-C:Constants.SignatureFormat.ES\_CSignatura AdES-A:Constants.SignatureFormat.ES\_A |
+| setSignaturePlacement | Constants.SignaturePlacement.ENVELOPED per seleccionar el tipus de signatura XML enveloped. Per seleccionar una signatura detached, farem servir el següent paràmetre: Constants.SignaturePlacement.DETACHED I per seleccionar una signatura del tipus enveloping, farem servir el paràmetre: Constants.SignaturePlacement.ENVELOPING |
+| setXmlEnvelopedXPathFirstChildOf | Expressió XPath que indica on volem que s&#39;incrusti la signatura generada. Per exemple, &quot;/&quot; per ubicar la signatura a continuació del node arrel del document XML. |
+| setXmlReturnBase64 | true per obtenir la signatura codificada en Base64 (i evitar així problemes amb Axis a l&#39;hora de serialitzar i deserialitzar signatures XML). |
+| setKeySubjectName | Certificat amb el que generar la signatura. |
+| setInputXmlBase64 | Dades a signar, codificades en Base64. |
+
+Amb els mètodes de la classe SmartSignResponse obtenim la resposta a la nostra petició de signatura:
+
+| Mètode | Paràmetres |
+| --- | --- |
+| getResultMajor | Indica si s&#39;ha pogut processar la petició, independentment del resultat d&#39;aquesta. |
+| getResultMinor | Detalls de la operació. |
+| getDocumentWithSignatureXml | Signatura XML. |
+| getDocumentWithSignatureXmlBase64 | Signatura XML codificada en Base64. |
+
+## 4.3Signatura XAdES-T detached a partir del hash d&#39;un document
+
+![Shape8](RackMultipart20220630-1-6kytqz_html_b3b4b667748d1a1.gif)
+
+import com.safelayer.trustedx.client.smartwrapper.\*;
+
+importorg.apache.axis.encoding.Base64;
+
+import org.apache.axis.message.SOAPHeaderElement;
+
+publicclass XAdESTDetachedSignature {
+
+staticfinal String _TRUSTEDX\_URL_ = &quot;https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert&quot;;
+
+staticfinal String _SIGNER\_DN_ = &quot;CN=Dummy&quot;;
+
+staticfinal String _RESULTMAJOR\_SUCCESS_ = &quot;urn:oasis:names:tc:dss:1.0:resultmajor:Success&quot;;
+
+staticfinal String _DIPOSITARI_ = &quot;O=0000000000&quot;;
+
+staticfinal String _ROL_ = &quot;TEST&quot;;
+
+publicstaticbyte[] signDetachedXAdEST(byte[] dataToSign) throws Exception {
+
+SmartSignRequest sReq = new SmartSignRequest(_TRUSTEDX\_URL_);
+
+//afegeixlacapçalera a lapetició
+
+Stub stub = (Stub) sReq.getStub();
+
+stub.setHeader(null, &quot;Rol&quot;, ROL);
+
+stub.setHeader(null, &quot;Dipositari&quot;, DIPOSITARI);
+
+//signatura XML simple
+
+sReq.setProfile(Constants.Profile._XADES_);
+
+sReq.setSignatureFormat(Constants.SignatureFormat._ES\_T_);
+
+//dades a signar
+
+sReq.setInputHashDigest(dataToSign.toString());
+
+sReq.setInputHashAlgorithm(&quot;sha1&quot;);
+
+//selecciódelaclaudesignatura
+
+sReq.setKeySubjectName(_SIGNER\_DN_);
+
+//enviamentdelapetició
+
+SmartSignResponse sResp = sReq.send();
+
+if (_RESULTMAJOR\_SUCCESS_.equals(sResp.getResultMajor())
+
+&amp;&amp; sResp.getResultMinor() == null) {
+
+//recuperaciódelasignatura
+
+String signature = sResp.getSignatureXml();
+
+return signature.getBytes();
+
+} else {
+
+throw new Exception(&quot;Error signing:&quot; + sResp.getResultMessage());
+
+}
+
+}
+
+public static void main(String args[]) throws Exception {
+
+String data = &quot;gYbYj9w6DofPvCfwqKKwXitsErA=&quot;;
+
+byte[] signature = signDetachedXAdEST(data.getBytes());
+
+System.out.println(&quot;signature=&quot; + new String(signature));
+
+}
+
+}
+
+En aquest cas, exposem codi d&#39;exemple per generar una signatura XML avançada amb segell de temps, a partir del resum criptogràfic (hash) d&#39;un document.
+
+Per construir la petició, invoquem els mètodes:
+
+| Mètode | Paràmetres |
+| --- | --- |
+| setInputHashDigest | Hash de les dades a signar, codificat en Base64. |
+| setInputHashAlgorithm | Algorisme de hash amb que s&#39;ha calculat el resum anterior |
+
+## 4.4Signatura de documents PDF
+
+Amb el codi següent enviem una petició de signatura d&#39;un document PDF, fent signatura visible, i consultem la resposta obtinguda.
+
+**Important** : L&#39;SSC només suporta la signatura d&#39;arxius PDF que utilitzin la versió 1.5 del format PDF.
+
+import com.safelayer.trustedx.client.smartwrapper.\*;
+
+import java.io.\*;
+
+import org.apache.axis.encoding.Base64;
+
+import org.apache.axis.message.SOAPHeaderElement;
+
+public class PdfSignature {
+
+static final String TRUSTEDX\_URL = &quot;https://ssc.preproduccio.catcert.cat:8443/trustedx-sgw/SignCert&quot;;
+
+static final String SIGNER\_DN = &quot;CN=Dummy&quot;;
+
+static final String RESULTMAJOR\_SUCCESS = &quot;urn:oasis:names:tc:dss:1.0:resultmajor:Success&quot;;
+
+static final String DIPOSITARI = &quot;O=0000000000&quot;;
+
+static final String ROL = &quot;TEST&quot;;
+
+public static byte[] signPdf(byte[] pdfToSign, String signatureInfo) throws Exception{
+
+SmartSignRequest sReq = new SmartSignRequest(TRUSTEDX\_URL);
+
+//afegeix la capçalera a la petició
+
+Stub stub = (Stub) sReq.getStub();
+
+stub.setHeader(null, &quot;Rol&quot;, ROL);
+
+stub.setHeader(null, &quot;Dipositari&quot;, DIPOSITARI);
+
+//signatura d&#39;un document PDF
+
+sReq.setProfile(Constants.Profile.PDF);
+
+//tipus de signatura
+
+sReq.setSignatureType(Constants.SignatureType.CMS);
+
+//selecció de la clau de signatura
+
+sReq.setKeySubjectName(SIGNER\_DN);
+
+//PDF a signar
+
+sReq.setInputPdfBase64Data(Base64.encode(pdfToSign));
+
+//configuració signatura visible
+
+sReq.setPdfSignatureInfo(signatureInfo);
+
+//enviament de la petició
+
+SmartSignResponse sResp = sReq.send();
+
+if (RESULTMAJOR\_SUCCESS.equals(sResp.getResultMajor()) &amp;&amp; sResp.getResultMinor() == null) {
+
+return Base64.decode(sResp.getDocumentWithSignaturePdf());
+
+} else {
+
+throw new Exception(&quot;Error signing:&quot; + sResp.getResultMessage());
+
+}
+
+}
+
+public static void main(String args[]) throws Exception {
+
+String signatureInfo =
+
+&quot;\&lt;css:PdfSignatureInfo xmlns:css=&#39;http://www.safelayer.com/TWS&#39;\&gt;&quot; +
+
+&quot;\&lt;css:PdfAttributes\&gt;\&lt;css:signatureAlg\&gt;SHA1\&lt;/css:signatureAlg\&gt;&quot; +
+
+&quot; \&lt;css:validationMethod\&gt;PPKMS\&lt;/css:validationMethod\&gt;&quot; +
+
+&quot; \&lt;css:signaturePosition\&gt;ADDLAST\&lt;/css:signaturePosition\&gt;&quot; +
+
+&quot; \&lt;css:params\&gt;\&lt;css:reason\&gt;Author\&lt;/css:reason\&gt;\&lt;/css:params\&gt;&quot; +
+
+&quot;\&lt;/css:PdfAttributes\&gt;&quot; +
+
+&quot;\&lt;css:Appearance\&gt;&quot; +
+
+&quot; \&lt;css:Rect x0=&#39;100&#39; y0=&#39;50&#39; x1=&#39;520&#39; y1=&#39;150&#39;/\&gt;&quot; +
+
+&quot; \&lt;css:Background\&gt;\&lt;css:image encodeType=&#39;base64&#39;\&gt;&quot; +
+
+&quot;\&lt;css:data\&gt;/9j/4AAQSkZJRgABAQEAYABgAAD/4QAWRXhpZgAASUkqAAgAAAAAAAAAAAD/2wBD&quot; +
+
+&quot;AAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hy&quot; +
+
+&quot;c5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy&quot; +
+
+&quot;MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAB+AMcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQ&quot; +
+
+&quot;EAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1Fh&quot; +
+
+&quot;ByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1&quot; +
+
+&quot;hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLD&quot; +
+
+&quot;xMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAA&quot; +
+
+&quot;AAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEI&quot; +
+
+&quot;FEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZG&quot; +
+
+&quot;VmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbH&quot; +
+
+&quot;yMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKK&quot; +
+
+&quot;KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqOeeO2t5biZtkUSF3Y&quot; +
+
+&quot;9lAyTT6z/EH/ACLeqf8AXnL/AOgGgFuUx4w0MjP2qX/wFl/+Jo/4TDQ/+fqX/wABZf8A4muWjk&quot; +
+
+&quot;8u3QseAgyeuOM9qT7TGSMllz03Arkfj/XFc3t32PSWATSdzqv+Ex0P/n6l/wDAWX/4mj/hMdD/&quot; +
+
+&quot;AOfqX/wFl/8Aia5rP+cmkyN3X+dSsT5F/wBnLudOPF+iEgC6lyen+jS//E1Z/t/T/wC9cf8AgL&quot; +
+
+&quot;L/APE1xx5K45w68+nzD/GvQl+7W9OfOcWIoexlYzv7f0/+9cf+Asv/AMTR/b+n/wB64/8AAWX/&quot; +
+
+&quot;AOJrRoyM1oc5nf2/p/8AeuP/AAFl/wDiadHrunyOiCSVS7BF328igknAGStX+veszWcCG1P/AE&quot; +
+
+&quot;+Qfn5goA1aKKKACiiigAooooAKKKKACiiigAooooAKKKKAErP8Qf8AIt6p/wBecv8A6Aa0O9Z+&quot; +
+
+&quot;v/8AIt6p/wBekv8A6AaXQFucE4DC2Rzhdh2k9A2Bg/WobbbAWtbuJUkERJkXpIAeT9elXURZLW&quot; +
+
+&quot;NSMqVBx74pFtYVbd5YJxj5jmuBux9ByXSsUlOshFwbYj/aznFQ3t3qdlbtPKLbapA4z36VsEf5&quot; +
+
+&quot;zSFFfh0DDsDyKSlrsU6btuyvZyTS2kUlx5ZZmRgE/ulhXcl9S/fbY4mwf3eeOM/4Vx2BhQBgBl&quot; +
+
+&quot;HTHGRXoKgbRXVQd4s8vHL3kUXN+NzKsePMAC+i45P1zSyy3oRhHEhcMPmJwCuf54q9jjFGOtbn&quot; +
+
+&quot;CUma/wDNTaI9vmENx/D2qjfm6MMQuggH22Ax49PMFbh+tZesnMVqMZ/0yD/0MUAatFFFABRRRQ&quot; +
+
+&quot;AUUUUAFFFFABRRRQAUUUUAFFFFABUF7bLe2FxaMxVZ4mjLDqAwIz+tT0UAc2PCQCgDUp8AYHyL&quot; +
+
+&quot;0/Kl/wCEU/6iM3/ftP8ACujoqPZx7Gvt6nc5z/hE/wDqJTf9+0/wo/4RT/qJT/8AftP8K6LNLm&quot; +
+
+&quot;j2cew/rFX+Y53/AIRRSQTqE5wQfuL/AIVr/Zbn/n+f/v2v+FW6M1SSWiM5zlN3kyp9muf+f5/+&quot; +
+
+&quot;/a/4UfZrn/n+f/v2v+FW6KZJU+y3X/P+/wD37X/CoZdNkuDF594zrHKkoGwDlTmtGigAooooAK&quot; +
+
+&quot;KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkOaKX3oAiuJktoGlc4VRk&quot; +
+
+&quot;1zMWrX1/rUCRNsiznZjqueSfw/nTvEF/51wLWN/3acyY7n0qTwvZkyT3r9ztjz2Hf+WPwrPnbl&quot; +
+
+&quot;ZHV7JRpc73OlopD1pa0OUKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA&quot; +
+
+&quot;CqmpXYsrGWY/eAwo9W7CrVYGsebqOqQadCflX55G/u/5B/Wk9tCoK71KWi6e99dNcTZMSOST2d&quot; +
+
+&quot;u/4Zrq0RY1CooVR2FMtreO1t0hjGEQYFSmlGPKiqtRzlcO9FAoqjMKKKKACiiigAooooAKKKKA&quot; +
+
+&quot;CiiigAooooAKKKKACiiigAooooAKKKKAENU9PtDAsk8nM9w2+Q+noPwHFXCKWgAooooAKKKKAC&quot; +
+
+&quot;iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA&quot; +
+
+&quot;KKKKACiiigAooooAKKKKACiiigD/2Q==\&lt;/css:data\&gt;&quot; +
+
+&quot; \&lt;css:imageSize width=&#39;200&#39; height=&#39;100&#39;/\&gt;&quot; +
+
+&quot; \&lt;css:position x=&#39;0&#39; y=&#39;0&#39;/\&gt;\&lt;/css:image\&gt;\&lt;/css:Background\&gt;&quot; +
+
+&quot; \&lt;css:Foreground\&gt;&quot; +
+
+&quot; \&lt;css:image encodeType=&#39;base64&#39;\&gt;\&lt;css:data\&gt;/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHB&quot; +
+
+&quot;wcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL&quot; +
+
+&quot;/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyM&quot; +
+
+&quot;jIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAE&quot; +
+
+&quot;CAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII&quot; +
+
+&quot;0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGl&quot; +
+
+&quot;qc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1&quot; +
+
+&quot;NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgc&quot; +
+
+&quot;ICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzU&quot; +
+
+&quot;vAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ&quot; +
+
+&quot;3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2&quot; +
+
+&quot;Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigD//2Q==\&lt;/css:data\&gt;&quot; +
+
+&quot; \&lt;css:imageSize width=&#39;1&#39; height=&#39;1&#39;/\&gt;&quot; +
+
+&quot; \&lt;css:position x=&#39;0&#39; y=&#39;0&#39;/\&gt;\&lt;/css:image\&gt;&quot; +
+
+&quot; \&lt;css:text\&gt;\&lt;css:properties color=&#39;0 0 0&#39; fontSize=&#39;10&#39;/\&gt;&quot; +
+
+&quot; \&lt;css:position x=&#39;12&#39; y=&#39;12&#39;/\&gt;&quot; +
+
+&quot; \&lt;css:SignatureInfos\&gt;&quot; +
+
+&quot; \&lt;css:signatureInfo title=&#39; &#39; id=&#39;Subject&#39;/\&gt;&quot; +
+
+&quot; \&lt;css:signatureInfo title=&#39; &#39; id=&#39;Date&#39;/\&gt;&quot; +
+
+&quot; \&lt;/css:SignatureInfos\&gt;\&lt;/css:text\&gt;\&lt;/css:Foreground\&gt;&quot; +
+
+&quot; \&lt;/css:Appearance\&gt;\&lt;/css:PdfSignatureInfo\&gt;&quot;;
+
+//lectura del document PDF
+
+File file = new File(&quot;unsigned.pdf&quot;);
+
+FileInputStream fis = new FileInputStream(file);
+
+byte[] pdfToSign = new byte[(int)file.length()];
+
+fis.read(pdfToSign);
+
+fis.close();
+
+byte[] signature = signPdf(pdfToSign, signatureInfo);
+
+//guardem el PDF signat en un fitxer
+
+java.io.FileOutputStream fos = new java.io.FileOutputStream(&quot;signed.pdf&quot;);
+
+if (fos!=null) {
+
+fos.write(signature);
+
+fos.close();
+
+}
+
+}
+
+}
+
+Per construir la petició, invoquem els mètodes de la classe SmartSignRequest descrits a la taula següent:
+
+| Mètode | Paràmetres |
+| --- | --- |
+| setProfile | Constants.Profile.PDF per seleccionar el perfil de signatura PDF. |
+| setSignatureType | Format de la signatura: Constants.SignatureType.CMS |
+| setPdfSignatureInfo | Tipus de signatura desitjat. En aquest exemple incloem informació de l&#39;aparença de la signatura per tal que sigui visible. |
+| setInputPdfBase64Data | Document PDF a signar codificat en Base64. |
+
+### 4.4.1Paràmetres de signatura visible
 
 Passarem a descriure els diferents paràmetres que permeten la configuració de la signatura visible en documents PDF.
 
-#### 4.4.1.1  &nb= sp;      Element <css:PdfSignatureInfo\>
+#### 4.4.1.1Element \&lt;css:PdfSignatureInfo\&gt;
 
-Aquest elem= ent conté informació sobre els= atributs de signatura propis d’A= dobe. L’estructura d’aquest element és la següent:\=
+Aquest element conté informació sobre els atributs de signatura propis d&#39;Adobe. L&#39;estructura d&#39;aquest element és la següent:
 
-<xs:element name=3D"PdfSignatureInfo" type=3D&quo= t;css:PdfSignatureInfoType" m= axOccurs\=3D"unbounded"/>
+\&lt;xs:element name=&quot;PdfSignatureInfo&quot; type=&quot;css:PdfSignatureInfoType&quot; maxOccurs=&quot;unbounded&quot;/\&gt;
 
-<xs:complexType name=3D"PdfSignatureInfoType">
+\&lt;xs:complexType name=&quot;PdfSignatureInfoType&quot;\&gt;
 
- <= ;xs:all\>
+\&lt;xs:all\&gt;
 
- <= ;xs:element name=3D"PdfAttributes" type=3D"css:PdfAttributesType"/>
+\&lt;xs:element name=&quot;PdfAttributes&quot; type=&quot;css:PdfAttributesType&quot;/\&gt;
 
- <= ;xs:element name=3D"Appearance" type=3D"css:Appeara= nceType" minOccurs=3D"0"/>
+\&lt;xs:element name=&quot;Appearance&quot; type=&quot;css:AppearanceType&quot; minOccurs=&quot;0&quot;/\&gt;
 
- <= ;/xs:all\>
+\&lt;/xs:all\&gt;
 
- <= ;xs:attribute name=3D"= name" type=3D"xs:string" use=3D"optional"/>
+\&lt;xs:attribute name=&quot;name&quot; type=&quot;xs:string&quot; use=&quot;optional&quot;/\&gt;
 
- <= ;xs:attribute name=3D"order" type=3D"xs:integer" use=3D"optional"/>
+\&lt;xs:attribute name=&quot;order&quot; type=&quot;xs:integer&quot; use=&quot;optional&quot;/\&gt;
 
-</xs:complexType\>
+\&lt;/xs:complexType\&gt;
 
-On podem observat que l’element &l= t;css:PdfSignatureInfo\> inclou els següents elements:
+On podem observat que l&#39;element \&lt;css:PdfSignatureInfo\&gt; inclou els següents elements:
 
-o&nb= sp;  <css:PdfAttributes\>:  Configuració del mode de signatura.
+- \&lt;css:PdfAttributes\&gt;: Configuració del mode de signatura.
 
-o&nb= sp;  <css:Appearance\><= span lang=3DES style=3D'font-family:"Calibri",sans-serif;mso-bidi-font-family:Ar= ial'> \[Opcional\]. Paràmetres de \= l’aparença de la signatura. Si aquest element no està present, es= genera una signatura de tipus invisible.
+- \&lt;css:Appearance\&gt; [Opcional]. Paràmetres de l&#39;aparença de la signatura. Si aquest element no està present, es genera una signatura de tipus invisible.
 
-**Element** **<c= ss:PdfAttributes\>**
+**Element \&lt;css:PdfAttributes\&gt;**
 
-L’element <css:PdfAttributes\> es <= span class=3DSpellE>pot fer servir en dos contexts bàsics:
+L&#39;element \&lt;css:PdfAttributes\&gt; es pot fer servir en dos contexts bàsics:
 
-o&nb= sp;  Confi= guració dels paràmetres relacionats amb el mode de signatura.
-
-o&nb= sp;  Obten= ció d’informació sobre el mode de signatura en operacions de verificació.
+- Configuració dels paràmetres relacionats amb el mode de signatura.
+- Obtenció d&#39;informació sobre el mode de signatura en operacions de verificació.
 
 La seva definició és la següent:
 
-<xs:element name=3D"PdfAttributes" type=3D"<= span class=3DSpellE>css:PdfAttributesType"/>
+\&lt;xs:element name=&quot;PdfAttributes&quot; type=&quot;css:PdfAttributesType&quot;/\&gt;
 
-<xs:complexType name=3D"PdfAttributesType">
+\&lt;xs:complexType name=&quot;PdfAttributesType&quot;\&gt;
 
-       <xs:sequence\>\=
+\&lt;xs:sequence\&gt;
 
-            = <xs:element name=3D"certified" minOccurs=3D"0">
+\&lt;xs:element name=&quot;certified&quot; minOccurs=&quot;0&quot;\&gt;
 
-            =         <xs:simpleType\>
+\&lt;xs:simpleType\&gt;
 
-            =               <xs:restriction base=3D&quo= t;xs:integer">
+\&lt;xs:restriction base=&quot;xs:integer&quot;\&gt;
 
-            =                      <xs:enumeration value=3D"0"/>
+\&lt;xs:enumeration value=&quot;0&quot;/\&gt;
 
-            =                      <xs:enumeration value=3D"1"/>
+\&lt;xs:enumeration value=&quot;1&quot;/\&gt;
 
-            =                      <xs:enumeration value=3D"2"/>
+\&lt;xs:enumeration value=&quot;2&quot;/\&gt;
 
-            =               </xs:restriction\>
+\&lt;/xs:restriction\&gt;
 
-            =         </xs:simpleType\>
+\&lt;/xs:simpleType\&gt;
 
-            = </xs:element\> \=
+\&lt;/xs:element\&gt;
 
-            = <xs:element name=3D"signatureAlg">
+\&lt;xs:element name=&quot;signatureAlg&quot;\&gt;
 
-            =         <xs:simpleType\>
+\&lt;xs:simpleType\&gt;
 
-            =               <xs:restriction base=3D&quo= t;xs:string">
+\&lt;xs:restriction base=&quot;xs:string&quot;\&gt;
 
-            =                      <xs:enumeration value=3D"SHA1"/>
+\&lt;xs:enumeration value=&quot;SHA1&quot;/\&gt;
 
-            =                      <xs:enumeration value=3D"DETACHED"/>
+\&lt;xs:enumeration value=&quot;DETACHED&quot;/\&gt;
 
-            =               </xs:restriction\>
+\&lt;/xs:restriction\&gt;
 
-            =         </xs:simpleType\>
+\&lt;/xs:simpleType\&gt;
 
-            = </xs:element\> \=
+\&lt;/xs:element\&gt;
 
-            = <xs:element name=3D"validationMethod">
+\&lt;xs:element name=&quot;validationMethod&quot;\&gt;
 
-            =         <xs:simpleType\>
+\&lt;xs:simpleType\&gt;
 
-            =               <xs:restriction base=3D&quo= t;xs:string">
+\&lt;xs:restriction base=&quot;xs:string&quot;\&gt;
 
-            =                      <xs:enumeration value=3D"PPKMS"/>
+\&lt;xs:enumeration value=&quot;PPKMS&quot;/\&gt;
 
-            =                      <xs:enumeration value=3D"PPKLITE"/>
+\&lt;xs:enumeration value=&quot;PPKLITE&quot;/\&gt;
 
-            =               </xs:restriction\>
+\&lt;/xs:restriction\&gt;
 
-            =         </xs:simpleType\>
+\&lt;/xs:simpleType\&gt;
 
-            = </xs:element\> \=
+\&lt;/xs:element\&gt;
 
-            = <xs:element name=3D"signaturePosition">
+\&lt;xs:element name=&quot;signaturePosition&quot;\&gt;
 
-            =         <xs:simpleType\>
+\&lt;xs:simpleType\&gt;
 
-            =               <xs:restriction base=3D&quo= t;xs:string">
+\&lt;xs:restriction base=&quot;xs:string&quot;\&gt;
 
-            =                      <xs:enumeration value=3D"FIRST"/>
+\&lt;xs:enumeration value=&quot;FIRST&quot;/\&gt;
 
-            =                      <xs:enumeration value=3D"LAST"/>
+\&lt;xs:enumeration value=&quot;LAST&quot;/\&gt;
 
-            =                      <xs:enumeration value=3D"ADDLAST"/>
+\&lt;xs:enumeration value=&quot;ADDLAST&quot;/\&gt;
 
-            =               </xs:restriction\>
+\&lt;/xs:restriction\&gt;
 
-            =         </xs:simpleType\>
+\&lt;/xs:simpleType\&gt;
 
-            = </xs:element\> \=
+\&lt;/xs:element\&gt;
 
-            = <xs:element name=3D"pa= rams" minOccurs=3D"0">
+\&lt;xs:element name=&quot;params&quot; minOccurs=&quot;0&quot;\&gt;
 
-            =         <xs:complexType\>
+\&lt;xs:complexType\&gt;
 
-            =               <xs:sequence\>
+\&lt;xs:sequence\&gt;
 
-            =                      <xs:element name=3D"location" type=3D"xs:string" minOccurs=3D"0"/>
+\&lt;xs:element name=&quot;location&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot;/\&gt;
 
-            =                      <xs:element name=3D"re= ason" type=3D"xs:string" minOccurs=3D"0"/>
+\&lt;xs:element name=&quot;reason&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot;/\&gt;
 
-            =                      <xs:element name=3D"contactInfo" type=3D"x= s:string" minOccurs=3D"0"/>
+\&lt;xs:element name=&quot;contactInfo&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot;/\&gt;
 
-            =               </xs:sequence\>
+\&lt;/xs:sequence\&gt;
 
-            =         </xs:complexType\>
+\&lt;/xs:complexType\&gt;
 
-            = </xs:element\> \=
+\&lt;/xs:element\&gt;
 
-       </xs:sequence\>
+\&lt;/xs:sequence\&gt;
 
-</xs:complexType\>
+\&lt;/xs:complexType\&gt;
 
-On es pot observar que l’element &l= t;css:PdfAttributes\> conté una seqüència dels següents elements, que veurem tot seguit:
+On es pot observar que l&#39;element \&lt;css:PdfAttributes\&gt; conté una seqüència dels següents elements, que veurem tot seguit:
 
-o&nb= sp;  <css:signatureAlg\>
+- \&lt;css:signatureAlg\&gt;
+- \&lt;css:validationMethod\&gt;
+- \&lt;css:signaturePosition\&gt;
+- \&lt;css:params\&gt; [Opcional]
 
-o&nb= sp;  <css:validationMethod\>
-
-o&nb= sp;  <css:signaturePosition\><= /span>
-
-o&nb= sp;  <css:params\> \[Opcional\]<= o:p>
-
-\=  
-
-**Element** **<c= ss:signatureAlg\>**
+**Element \&lt;css:signatureAlg\&gt;**
 
 Indica el tipus de signatura PDF. La següent taula descriu els valors suportats per aquest element:
 
-Valor
+| Valor | Tipus de signatura |
+| --- | --- |
+| SHA1 | Signatura PKCS#7 attached sobre un resum criptogràfic SHA1 de les dades del PDF (adbe.pkcs7.sha1) |
+| DETACHED | Signatura PKCS#7 detached sobre les dades d&#39;un PDF (adbe.pkcs7.detached). Adobe recomana utilitzar l&#39;algorisme DETACHED per a un millor compliment dels estàndards. |
 
-Tipus de sign= atura
+**Element \&lt;css:validationMethod\&gt;**
 
-SHA1
+Selecciona el plug-in amb el que validar la signatura PDF en AdobeReader. La següent taula descriu els valors suportats per aquest element:
 
-Signatura PKCS#7 attached sobre un resum criptogràfic SHA1= de les dades del PDF (adbe.pkcs7.sha1)
+| Valor | Tipus de signatura |
+| --- | --- |
+| PPKMS | Validador de Microsoft |
+| PPKLITE | Validador d&#39;Adobe |
 
-DETACHED
+**Element \&lt;css:signaturePosition\&gt;**
 
-Signatura PKCS#7 detached sobre les d= ades d’un PDF (adbe.pkcs7.detached). Adobe recomana utilitzar= l’algorisme DETACHED per a un \= millor compliment dels <= span class=3DSpellE>estàndards.
+Indica el posicionament de l&#39;aparença de la signatura. La següent taula descriu els valors suportats per aquest element:
 
-**Element** **<c= ss:validationMethod\>**
+| Valor | Tipus de signatura |
+| --- | --- |
+| FIRST | Validador de Microsoft |
+| LAST | Validador d&#39;Adobe |
+| ADDLAST | Pàgina afegida expressament al final del document. |
 
-Selecciona el plug\-= in amb el que validar la signatura PDF en AdobeReader. La següent taula descriu els valors suportats per aquest element:=
+**Element \&lt;css:params\&gt;**
 
-Valor
+Defineix les propietats d&#39;una signatura PDF (que corresponen a entrades del seu diccionari) mitjançant els següents elements:
 
-Tipus de sign= atura
+- \&lt;css:location\&gt;: Lloc de la signatura, indicat mitjançant una cadena de text. Correspon a l&#39;entrada de clau _Location_ del diccionari de la signatura.
+- \&lt;css:reason\&gt;: Compromís de signatura, indicat mitjançant una cadena de text. Correspon a l&#39;entrada de clau _Reason_ del diccionari de signatura.
+- \&lt;css:contactInfo\&gt;: Informació de contacte del signatari (p.ex. el seu número de telèfon), indicat mitjançant una cadena de text. Correspon a l&#39;entrada de clau _ContactInfo_ del diccionari de signatura.
 
-PPKMS
+**Exemple d&#39;element \&lt;css:PdfAttributes\&gt;**
 
-Validador de Microsoft
+\&lt;css:PdfAttributes\&gt;
 
-PPKLITE
+\&lt;css:validationMethod\&gt;PPKMS\&lt;/css:validationMethod\&gt;
 
-Validador d’Adobe\=
+\&lt;css:signatureAlg\&gt;SHA1\&lt;/css:signatureAlg\&gt;
 
-**Element** **<c= ss:signaturePosition\>**
+\&lt;css:signaturePosition\&gt;LAST\&lt;/css:signaturePosition\&gt;
 
-Indica el posicionament de l’aparença de la signatura. La següent taula descriu els <= span class=3DSpellE>valors suportats per aquest element:
+\&lt;css:params\&gt;
 
-Valor
+\&lt;css:location\&gt;Barcelona\&lt;/css:location\&gt;
 
-Tipus de sign= atura
+\&lt;css:reason\&gt;Razon de la firma\&lt;/css:reason\&gt;
 
-FIRST
+\&lt;css:contactInfo\&gt;+34 555 666 777\&lt;/css:contactInfo\&gt;
 
-Validador de Microsoft
+\&lt;/css:params\&gt;
 
-LAST
+\&lt;/css:PdfAttributes\&gt;
 
-Validador d’Adobe\=
+**Element \&lt;css:Appearance\&gt;**
 
-ADDLAST
+Defineix el format de l&#39;aparença de la signatura. Si aquest element no està present, es genera una signatura invisible.
 
-Pàgina afegida expressament al= final del document.
+L&#39;estructura d&#39;aquest element és la següent:
 
-**Element** **<c= ss:params\>**
+\&lt;xs:element name=&quot;Appearance&quot; type=&quot;css:AppearanceType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-Defineix les = propietats d’una signatur= a PDF (que corresponen a entrades del seu diccionari) mitjançant els següents elements:
+\&lt;xs:complexType name=&quot;AppearanceType&quot;\&gt;
 
-o&nb= sp;  <css:location\>: Lloc de la signatura, indicat mitjançant una cadena de text. Correspon a l’entrada de = clau _Location_ del diccionari de la signatura.
+\&lt;xs:sequence\&gt;
 
-o&nb= sp;  <css:reason\>: Compromís de signatura, indicat mitjançant una cadena de text. Corres= pon a l’entrada de clau\= _Reason_ del di= ccionari de signatura.
+\&lt;xs:element name=&quot;Rect&quot; type=&quot;css:RectType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-o&nb= sp;  <css:contactInfo\>\= : Informació de contacte del signa= tari (p.ex. el seu númer= o de telèfon), indicat mitjançant una cadena de text. Correspon a l’entrada de = clau _ContactInfo_ del diccionari de signatura.<= /p>
+\&lt;xs:element name=&quot;Background&quot; type=&quot;css:BackgroundType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-**Exemple** **d’element <<= span class=3DSpellE>css:PdfAttributes\>\=**
+\&lt;xs:element name=&quot;Foreground&quot; type=&quot;css:ForegroundType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-<css:PdfAttributes\>
+\&lt;/xs:sequence\&gt;
 
-       <css:validationMethod\>PP= KMS</css:validationMethod\>
-
-       <css:signatureAlg\>SHA1&l= t;/css:signatureAlg\>
-
-       <css:signaturePosition\>L= AST</css:signaturePosition\>
-
-       <css:params\><= /span>
-
-            = <css:location\>Barcelona&= lt;/css:location\>
-
-            = <css:r= eason\>Razon de la firma</css:reason= \>
-
-             <css:contactInfo\>+34 555 666 777</css:contactInfo\><= /span>
-
-       </css:params\><= /span>
-
-</css:PdfAttributes\>
-
-\=  
-
-**Element <css:Appearance<= /span>\>**
-
-Defineix el <= span class=3DSpellE>format de l’aparença de l= a signatura. Si aquest element n= o està present, es genera u= na signatura invisible.
-
-L’estructura d’aquest element és la següent:\=
-
-<xs:element name=3D"Appearance" type=3D"css:Appeara= nceType" minOccurs=3D"0"/>
-
-<xs:complexType name=3D"AppearanceType">
-
-       <xs:sequence\>\=
-
-            = <xs:element name=3D"Rect" type=3D"css:Rect= Type" minOccurs=3D"0"/>
-
-            = <xs:element name=3D"Background" type=3D"css:Backgro= undType" minOccurs=3D"0"/>
-
-            = <xs:element name=3D"Foreground" type=3D"css:Foregro= undType" minOccurs=3D"0"/>
-
-       </xs:sequence\>\=
-
-</xs:complexType\>
+\&lt;/xs:complexType\&gt;
 
 Conté els següents elements:
 
-o&nb= sp;  <css:Rect\>: Espai on s’incrustarà l’aparença si és necessari crear un nou ca= mp de signatura. Si es treballa amb un camp de signatura buit, aquest<= /span> element no té cap efecte.
+- \&lt;css:Rect\&gt;: Espai on s&#39;incrustarà l&#39;aparença si és necessari crear un nou camp de signatura. Si es treballa amb un camp de signatura buit, aquest element no té cap efecte.
 
-o&nb= sp;  <css:Background\><= span lang=3DES style=3D'font-family:"Calibri",sans-serif;mso-bidi-font-family:Ar= ial'>: Imatge de fons de l’aparença de la signatura.
+- \&lt;css:Background\&gt;: Imatge de fons de l&#39;aparença de la signatura.
+- \&lt;css:Foreground\&gt;: Imatge en primer pla de l&#39;aparença de la signatura.
 
-o&nb= sp;  <css:Foreground\><= span lang=3DES style=3D'font-family:"Calibri",sans-serif;mso-bidi-font-family:Ar= ial'>: Imatge en primer pla de <= span class=3DSpellE>l’aparença de la signatura.
+**Element \&lt;css:Rect\&gt;**
 
-**Element** **<c= ss:Rect\>**
+L&#39;element \&lt;css:Rect\&gt; indica on col·locar una signatura quan aquesta és visible. La seva definició és la següent:
 
-L’element <css:Rect\> indica on col·locar una signatura qu= an aquesta és visible.= La seva definició és la següent:\=
+\&lt;xs:complexType name=&quot;RectType&quot;\&gt;
 
-<xs:complexType name=3D"RectType">
+\&lt;xs:attribute name=&quot;x0&quot; type=&quot;xs:positiveInteger&quot;/\&gt;
 
-       <xs:attribute name=3D"= x0" type=3D"xs:positiveInteger"/>\=
+\&lt;xs:attribute name=&quot;y0&quot; type=&quot;xs:positiveInteger&quot;/\&gt;
 
-       <xs:attribute name=3D"= y0" type=3D"xs:positiveInteger"/>\=
+\&lt;xs:attribute name=&quot;x1&quot; type=&quot;xs:positiveInteger&quot;/\&gt;
 
-       <xs:attribute name=3D"= x1" type=3D"xs:positiveInteger"/>\=
+\&lt;xs:attribute name=&quot;y1&quot; type=&quot;xs:positiveInteger&quot;/\&gt;
 
-       <xs:attribute name=3D"= y1" type=3D"xs:positiveInteger"/>\=
+\&lt;/xs:complexType\&gt;
 
-</xs:complexType\>
+Els atributs x0, y0, x1, i y1 defineixen les coordenades del rectangle al que es mostra la signatura. Les coordenades origen (0,0) es situen a la cantonada inferior esquerra de la pàgina.
 
-Els atri= buts x0, y0, x1, i <= /span>y1 defineixen les coordenades del r= ectangle al que es mostra la signatura. Les coordenades = origen (0,0) es situen a la cantonada inferior esquerra de la pàgina.
+- x0, y0: Punt inferior esquerre (expressat en píxels)
+- x1, y1: Punt superior dret (expressat en píxels)
 
-o&nb= sp;  x0, y0: Punt inferior esq= uerre (expressat en píxels)
+**Element \&lt;css:Background\&gt;**
 
-o&nb= sp;  x1, y1: Punt superior dre= t (expressat en píxels)
+L&#39;element \&lt;css:Background\&gt; defineix la imatge de fons (en segon pla) d&#39;una signatura visible. La seva definició és:
 
-**Element** **<c= ss:Background\>**
+\&lt;xs:element name=&quot;Background&quot; type=&quot;css:BackgroundType&quot;/\&gt;
 
-L’element <css:Background\> defineix la imatge de fons (en segon pla) d’una signatura visi= ble. La seva definició és:
+\&lt;xs:complexType name=&quot;BackgroundType&quot;\&gt;
 
-<xs:element name=3D"Background" type=3D"css:Backgro= undType"/>
+\&lt;xs:all\&gt;
 
-<xs:complexType name=3D"BackgroundType">
+\&lt;xs:element name=&quot;image&quot; type=&quot;css:ImageType&quot;/\&gt;
 
-       <xs:all\>
+\&lt;/xs:all\&gt;
 
-            = <xs:element name=3D"im= age" type=3D"css:ImageType"/>
+\&lt;/xs:complexType\&gt;
 
-       </xs:all\>
+L&#39;element \&lt;css:Background\&gt; només conté l&#39;element \&lt;css:image\&gt;, que descriurem més endavant.
 
-</xs:complexType\>
+**Element \&lt;css:Foreground\&gt;**
 
-L’element\= <css:B= ackground\> només conté l’element <css:image\>, que descriurem més endavant.<= /span>
+L&#39;element \&lt;css:Foreground\&gt; defineix la imatge (en primer pla) i el text de la signatura. La seva definició és:
 
-**Element** **<c= ss:Foreground\>**
+\&lt;xs:element name=&quot;Foreground&quot; type=&quot;css:ForegroundType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-L’element <css:Foreground\> defineix la imatge (en pr= imer pla) i el text de la sign= atura. La seva definició <= span class=3DSpellE>és:
+\&lt;xs:complexType name=&quot;ForegroundType&quot;\&gt;
 
-<xs:element name=3D"Foreground" type=3D"css:Foregro= undType" minOccurs=3D"0"/>
+\&lt;xs:all\&gt;
 
-<xs:complexType name=3D"ForegroundType">
+\&lt;xs:element name=&quot;image&quot; type=&quot;css:ImageType&quot;/\&gt;
 
-       <xs:all\>
+\&lt;xs:element name=&quot;text&quot; type=&quot;css:TextType&quot;/\&gt;
 
-            = <xs:element name=3D"im= age" type=3D"css:ImageType"/>
+\&lt;/xs:all\&gt;
 
-            = <xs:element name=3D"te= xt" type=3D"css:TextType"/>\=
+\&lt;/xs:complexType\&gt;
 
-       </xs:all\>
+L&#39;element \&lt;css:Foreground\&gt; conté els dos elements següents:
 
-</xs:complexType\>
+- \&lt;css:image\&gt;: Imatge de la signatura.
+- \&lt;css:text\&gt;: Text amb informació sobre la signatura.
 
-L’element\= <css:F= oreground\> conté els dos elements següents:
+**Element \&lt;css:image\&gt;**
 
-o&nb= sp;  <css:image\>: Imatge de la signatura.
+L&#39;element \&lt;css:image\&gt; defineix la imatge d&#39;una signatura. La seva definició és:
 
-o&nb= sp;  <css:text\>: Text amb informació sobre la signatura.
+\&lt;xs:element name=&quot;image&quot; type=&quot;css:ImageType&quot;/\&gt;
 
-**Element** **<c= ss:image\>**
+\&lt;xs:complexType name=&quot;ImageType&quot;\&gt;
 
-L’element <css:image\> defi= neix la imatge d’una sig= natura. La seva definició <= span class=3DSpellE>és:
+\&lt;xs:all\&gt;
 
-<xs:element name=3D"image" type=3D"css:ImageType"/>
+\&lt;xs:element name=&quot;data&quot; type=&quot;xs:string&quot;/\&gt;
 
-<xs:complexType name=3D"ImageType">
+\&lt;xs:element name=&quot;imageSize&quot; minOccurs=&quot;0&quot;\&gt;
 
-       <xs:all\>
+\&lt;xs:complexType\&gt;
 
-            = <xs:element name=3D"da= ta" type=3D"xs:string"/>
+\&lt;xs:attribute name=&quot;width&quot; type=&quot;xs:positiveInteger&quot;/\&gt;
 
-            = <xs:element name=3D"imageSize" minOccurs=3D"0">
+\&lt;xs:attribute name=&quot;height&quot; type=&quot;xs:positiveInteger&quot;/\&gt;
 
-            =         <xs:complexType\>
+\&lt;/xs:complexType\&gt;
 
-            =               <xs:attribute name=3D"width" type=3D"xs:positiveInteg= er"/>
+\&lt;/xs:element\&gt;
 
-            =               <xs:attribute name=3D"height" type=3D"xs:positiveInte= ger"/>
+\&lt;xs:element name=&quot;position&quot; type=&quot;css:PositionType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-            =         </xs:complexType\>
+\&lt;/xs:all\&gt;
 
-            = </xs:element\><= /span>
+\&lt;xs:attribute name=&quot;encodeType&quot;\&gt;
 
-            = <xs:element name=3D"position" type=3D"css:PositionT= ype" minOccurs=3D"0"/>
+\&lt;xs:simpleType\&gt;
 
-       </xs:all\>
+\&lt;xs:restriction base=&quot;xs:string&quot;\&gt;
 
-       <xs:attribute name=3D"= encodeType">
+\&lt;xs:enumeration value=&quot;uri&quot;/\&gt;
 
-            = <xs:simpleType\>
+\&lt;xs:enumeration value=&quot;base64&quot;/\&gt;
 
-            =         <xs:restriction base=3D&quo= t;xs:string">
+\&lt;/xs:restriction\&gt;
 
-            =               <xs:enumeration value=3D&qu= ot;uri"/>
+\&lt;/xs:simpleType\&gt;
 
-            =               <xs:enumeration value=3D"base64"/>
+\&lt;/xs:attribute\&gt;
 
-            =         </xs:restriction\>
+\&lt;/xs:complexType\&gt;
 
-            = </xs:simpleType\>
+L&#39;element \&lt;css:image\&gt; conté els següents atributs:
 
-       </xs:attribute\>
+- //image/@encodeType: Indica la codificació utilitzada per l&#39;element \&lt;css:data\&gt; per definir la imatge de la signatura. La taula següent defineix els valors suportats per aquest atribut:
 
-</xs:complexType\>
-
-L’element\= <css:i= mage\> conté els següents atributs:<= o:p>
-
-\=  
-
-o   <= /span>//image<= /span>/@encodeType: Indica la codificació utilitzada per l’element = <css:= data\> per definir la imatge de la signatura. La taula= següent defineix els valors suportats per aquest atribut:=
-
-Valor d’encodeType <= /o:p>
-
-Contingut de <= css:data\>
-
-uri
-
-Referència al fitxer de la imatge
-
-base64
-
-Imatge codificad= a en Base64
+| Valor d&#39;encodeType | Contingut de \&lt;css:data\&gt; |
+| --- | --- |
+| uri | Referència al fitxer de la imatge |
+| base64 | Imatge codificada en Base64 |
 
 I els següents elements:
 
-o&nb= sp;  <css:data\>: Imatge de la sign= atura codificada de la manera que indica l’atribut //image<= /span>/@encodeType. El format de la imatge ha de ser JPEG.
+- \&lt;css:data\&gt;: Imatge de la signatura codificada de la manera que indica l&#39;atribut //image/@encodeType. El format de la imatge ha de ser JPEG.
+- \&lt;css:imageSize\&gt;: Indica, mitjançant els següents atributs, el tamany de visualització de la imatge:
 
-o&nb= sp;  <css:imageSize\>: Indica, mitjançant els següents atributs, el tamany de visualització d= e la imatge:
+- //imageSize/@width: Amplada de la imatge (en píxels).
 
-   =             \-    //imageSize/@width: Amplada de la imatge (en = píxels).
+- //imageSize/@height: Alçada de la imatge (en píxels).
 
-   =             \-    //imageSize/@height: Alçada de la imatge (en <= span class=3DSpellE>píxels).
+Si aquest element s&#39;omet, el tamany de visualització serà el real de la imatge.
 
-Si aquest element s’omet, el tamany de visualització <= span class=3DSpellE>serà el real de la imatge\= .
+- \&lt;css:Position\&gt;: Indica la posició relativa de la imatge dins l&#39;espai que defineix l&#39;element \&lt;css:Rect\&gt;. En concret, aquest element estableix la coordenada inferior esquerra de la imatge mitjançant els següents atributs:
 
-o&nb= sp;  <css:Position\>: Indica la posició relativa de la imatge dins l’espai que defineix l’element <css:= Rect\>. En concret, aquest = element estableix la coor= denada inferior esquerra de la im= atge mitjançant els següents atributs:
+- //position/@x: Desplaçament horitzontal (en píxels).
 
-   =             \-    //position/@x: Desplaçament horitzontal (en píxels).<= o:p>
+- //position/@y: Desplaçament vertical (en píxels).
 
-   =             \-    //position/@y: Desplaçament vert= ical (en píxels).
+**Element \&lt;css:text\&gt;**
 
-**Element** **<css:text\>**
+L&#39;element \&lt;css:text\&gt; conté un text amb informació sobre la signatura. La definició és:
 
-L’element <css:= text\> conté un text amb <= span class=3DSpellE>informació sobre la signatura. La definició és:
+\&lt;xs:element name=&quot;text&quot; type=&quot;css:TextType&quot;/\&gt;
 
-<xs:element name=3D"text" type=3D"css:TextType"/>
+\&lt;xs:complexType name=&quot;TextType&quot;\&gt;
 
-<xs:complexType name=3D"TextType">
+\&lt;xs:all\&gt;
 
-       <xs:all\>
+\&lt;xs:element name=&quot;properties&quot; minOccurs=&quot;0&quot;\&gt;
 
-            = <xs:element name=3D"properties" minOccurs=3D"0">
+\&lt;xs:complexType\&gt;
 
-            =         <xs:complexType\>
+\&lt;xs:attribute name=&quot;color&quot; type=&quot;xs:string&quot;/\&gt;
 
-            =               <xs:attribute name=3D"= color" type=3D"xs:stri= ng"/>
+\&lt;xs:attribute name=&quot;fontSize&quot; type=&quot;xs:positiveInteger&quot;/\&gt;
 
-            =               <xs:attribute name=3D"= fontSize" type=3D"xs:p= ositiveInteger"/>
+\&lt;/xs:complexType\&gt;
 
-            =         </xs:complexType\>
+\&lt;/xs:element\&gt;
 
-            = </xs:element\><= /span>
+\&lt;xs:element name=&quot;position&quot; type=&quot;css:PositionType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-            = <xs:element name=3D"position" type=3D"css:PositionT= ype" minOccurs=3D"0"/>
+\&lt;xs:element name=&quot;SignatureInfos&quot; type=&quot;css:SignatureInfosType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-            = <xs:element name=3D"SignatureInfos" type=3D"css:SignatureInfosType" minOccurs=3D"0"/>
+\&lt;/xs:all\&gt;
 
-       </xs:all\>
+\&lt;/xs:complexType\&gt;
 
-</xs:complexType\>
+\&lt;xs:element name=&quot;SignatureInfos&quot; type=&quot;css:SignatureInfosType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-<xs:element name=3D"SignatureInfos" type=3D"= css:SignatureInfosType" minOccurs=3D"0"= ;/>
+\&lt;xs:complexType name=&quot;SignatureInfosType&quot;\&gt;
 
-<xs:complexType name=3D"SignatureInfosType"><= /o:p>
+\&lt;xs:sequence\&gt;
 
-       <xs:sequence\>\=
+\&lt;xs:element name=&quot;signatureInfo&quot; maxOccurs=&quot;unbounded&quot;\&gt;
 
-            = <xs:element name=3D"signatureInfo" maxOccurs=3D"unbounded">
+\&lt;xs:complexType\&gt;
 
-            =         <xs:complexType\>
+\&lt;xs:attribute name=&quot;title&quot; type=&quot;xs:string&quot;/\&gt;
 
-            =               <xs:attribute name=3D"title" type=3D"xs:string\= "/>
+\&lt;xs:attribute name=&quot;id&quot;\&gt;
 
-            =               <xs:attribute name=3D"= id">
+\&lt;xs:simpleType\&gt;
 
-            =                      <xs:simpleType\>
+\&lt;xs:restriction base=&quot;xs:string&quot;\&gt;
 
-            =                            <xs:restriction base=3D&quo= t;xs:string">
+\&lt;xs:enumeration value=&quot;Subject&quot;/\&gt;
 
-            =                                   <xs:enumeration value=3D"Subject"/>
+\&lt;xs:enumeration value=&quot;Issuer&quot;/\&gt;
 
-            =                                   <xs:enumeration value=3D"Issuer"/>
+\&lt;xs:enumeration value=&quot;SerialNumber&quot;/\&gt;
 
-            =                                   <xs:enumeration value=3D&qu= ot;SerialNumber"/>
+\&lt;xs:enumeration value=&quot;Reason&quot;/\&gt;
 
-            =                                   <xs:enumeration value=3D"Reason"/>
+\&lt;xs:enumeration value=&quot;Location&quot;/\&gt;
 
-            =                                   <xs:enumeration value=3D&qu= ot;Location"/>
+\&lt;xs:enumeration value=&quot;ContactInfo&quot;/\&gt;
 
-            =                                   <xs:enumeration value=3D&qu= ot;ContactInfo"/>
+\&lt;xs:enumeration value=&quot;Date&quot;/\&gt;
 
-            =                                   <xs:enumeration value=3D"Date"/>
+\&lt;/xs:restriction\&gt;
 
-            =                            </xs:restriction\>
+\&lt;/xs:simpleType\&gt;
 
-            =                      </xs:simpleType\>
+\&lt;/xs:attribute\&gt;
 
-            =               </xs:attribute\>
+\&lt;/xs:complexType\&gt;
 
-            =         </xs:complexType\>
+\&lt;/xs:element\&gt;
 
-            = </xs:element\><= /span>
+\&lt;/xs:sequence\&gt;
 
-       </xs:sequence\>\=
+\&lt;/xs:complexType\&gt;
 
-</xs:complexType\>
+L&#39;element \&lt;css.text\&gt; conté els següents elements:
 
-L’element\= <css.text\> conté els següents elements:
+- \&lt;css:properties\&gt; [Opcional] Defineix, mitjançant els següents atributs, el color i el tamany del text:
 
-o&nb= sp;  <css:properties\><= span lang=3DES style=3D'font-family:"Calibri",sans-serif;mso-bidi-font-family:Ar= ial'> \[Opcional\] Defineix, mitja= nçant els següents atributs, el color i el tamany del text:
+- //properties/@color: Color del text (en notació RGB, amb valors entre 0 i 1).
 
-   =             \-    //properties/@color: Color del text (en notació= RGB, amb valors ent= re 0 i 1).
+- //properties/@fontSize: Tamany de la font.
 
-   =             \-    //properties/@fontSize: Tamany de la font.
+- \&lt;css:position\&gt; [Opcional] Indica la posició relativa del text dins l&#39;espai que defineix l&#39;element \&lt;css:Rect\&gt;. En concret, aquest element indica la coordenada inferior esquerra del text mitjançant els següents atributs:
 
-o&nb= sp;  <css:position\> \[Opcional\] Indica la posició relativa del text dins l’espai que defineix l’element <css:= Rect\>. En concret, aquest = element indica la coordenada inferior esquerra del text mitjançant\= els següents atributs:
+- //position/@x: Desplaçament horitzontal (en píxels).
 
-   =             \-    //position/@x: Desplaçament horitzontal (en píxels).<= o:p>
+- //position/@y: Desplaçament vertical (en píxels).
 
-   =             \-    //position/@y: Desplaçament vert= ical (en píxels).
+- \&lt;css:SignatureInfos\&gt; [Opcional]: Inclou una seqüència d&#39;elements \&lt;css:SignatureInfo\&gt;, cadascun dels quals correspon a un camp textual que s&#39;integra en el text de la signatura, i té els següents atributs:
 
-o&nb= sp;  <css:SignatureInfos\> \[Opcional\]: Inclou una seq= üència d’elements <css:SignatureInfo\>\= , cadascun dels quals correspon a un camp textual que s’integra en el text de la signatura, i té els següents atributs:<= o:p>
+- //SignatureInfo/@title: Etiqueta que es mostra al costat del camp de text en la representació gràfica de la signatura.
 
-   =             \-    //SignatureInfo/@title: Etiqueta que es mostra al \= costat del camp de text en= la                repres= entació gràfica de la signatura.
+- //SignatureInfo/@id: Identificador del camp de text. Aquest pot correspondre tant a camps del certificat (_Subject_, _Issuer_, _SerialNumber_), com a propietats de la signatura del PDF (_Reason_, _Location_, _ContactInfo_, _Date_) que estan contingudes al seu diccionari. Els valors que pot tenir són:
 
-   =             \-    //SignatureInfo/@id: Identificador del camp de \= text. Aquest pot correspondre tant a camps                = del certificat (_Subject_, _Issuer_, _SerialNumber_), com a propietats de la signatura del PDF (_Reason_,               _Location_,= _ContactInfo_, _Date_) que est= an contingudes al seu = diccionari. Els valors que pot tenir són:
+| Camp | Descripció |
+| --- | --- |
+| Subject | Titular del certificat de la signatura |
+| Issuer | Autoritat de certificació (CA) que ha emès el certificat de la signatura |
+| SerialNumber | Número de sèrie del certificat de la signatura |
+| Reason | Raó de la generació de la signatura |
+| Location | Lloc on s&#39;ha portat a terme la signatura |
+| ContactInfo | Dades de contacte de la persona/entitat que ha realitzat al signatura |
+| Date | Data de la signatura |
 
-Camp
+**Element \&lt;css:StoreSignatureField\&gt;**
 
-Descripció
+Aquest element selecciona el camp de signatura al qual s&#39;ha d&#39;incrustar la signatura generada. La definició d&#39;aquest element és la següent:
 
-Subject
+\&lt;xs:element name=&quot;StoreSignatureField&quot;\&gt;
 
-Titular del certificat de la signatura
+\&lt;xs:complexType\&gt;
 
-Issuer
+\&lt;xs:attribute name=&quot;name&quot; type=&quot;xs:string&quot; use=&quot;required&quot;/\&gt;
 
-Autoritat de certificació (CA) que ha emès<= /span> el certificat de la signatura
+\&lt;xs:attribute name=&quot;create&quot; type=&quot;xs:boolean&quot; use=&quot;required&quot;/\&gt;
 
-SerialNumber
+\&lt;/xs:complexType\&gt;
 
-Número de sèrie d= el certificat de la signatura
+\&lt;/xs:element\&gt;
 
-Reason
+L&#39;element \&lt;css:StoreSignatureField\&gt; conté els següents atributs:
 
-Raó de la generació de la signatura
-
-Location
-
-Lloc on s’ha portat a terme la signatura
-
-ContactInfo
-
-Dades de contacte de la persona/entitat que ha realitzat al signatura
-
-Date
-
-Data de la signatura
-
-**Element** **<c= ss:StoreSignatureField\>**
-
-Aquest elem= ent selecciona el camp de signatura al qual s’ha d’incrustar la signatura generada. La definició d’aquest element és\= la següent:
-
-<xs:element name=3D"StoreSignatureField">\=
-
-       <xs:complexType\>
-
-            = <xs:attribute name=3D"= name" type=3D"xs:string" use=3D"required"/>
-
-            = <xs:attribute name=3D"create" type=3D"xs:boolean" use=3D"required"/>
-
-       </xs:complexType\>
-
-</xs:element\>
-
-L’element\= <css:S= toreSignatureField\> conté els següents atributs:<= o:p>
-
-o&nb= sp;  //StoreSignatureField/@name: Identificador del camp de signatura.\=
-
-o&nb= sp;  //StoreSignatureField/@create: Booleà que indica si cal crear el camp de signatura indicat per //StoreSignatureFi= eld/@name, si no existeix al PDF.
+- //StoreSignatureField/@name: Identificador del camp de signatura.
+- //StoreSignatureField/@create: Booleà que indica si cal crear el camp de signatura indicat per //StoreSignatureField/@name, si no existeix al PDF.
 
 #### 4.4.1.2Plantilla de signatures PDF
 
-Una plantilla de signatura PDF és un document XML que té la \= següent estructura:
+Una plantilla de signatura PDF és un document XML que té la següent estructura:
 
-<xs:element name=3D"PdfTemplate" type=3D"css:PdfTemplateType"/>
+\&lt;xs:element name=&quot;PdfTemplate&quot; type=&quot;css:PdfTemplateType&quot;/\&gt;
 
-<xs:complexType name=3D"PdfTemplateType">
+\&lt;xs:complexType name=&quot;PdfTemplateType&quot;\&gt;
 
-       <xs:sequence\>\=
+\&lt;xs:sequence\&gt;
 
-            = <xs:element name=3D"PdfDocument" maxOccurs=3D"unbounded">
+\&lt;xs:element name=&quot;PdfDocument&quot; maxOccurs=&quot;unbounded&quot;\&gt;
 
-            =         <xs:complexType\>
+\&lt;xs:complexType\&gt;
 
-            =               <xs:sequence\>\=
+\&lt;xs:sequence\&gt;
 
-            =                      <xs:element name=3D"SignatureField" type=3D"css:PdfSignatureInfoType" maxOccurs\=3D"unbounded"/>
+\&lt;xs:element name=&quot;SignatureField&quot; type=&quot;css:PdfSignatureInfoType&quot; maxOccurs=&quot;unbounded&quot;/\&gt;
 
-            =               </xs:sequence\>\=
+\&lt;/xs:sequence\&gt;
 
-            =               <xs:attribute name=3D"title" type=3D"xs:string\= " use=3D"optional"/>
+\&lt;xs:attribute name=&quot;title&quot; type=&quot;xs:string&quot; use=&quot;optional&quot;/\&gt;
 
-            =         </xs:complexType\>
+\&lt;/xs:complexType\&gt;
 
-            = </xs:element\><= /span>
+\&lt;/xs:element\&gt;
 
-       </xs:sequence\>\=
+\&lt;/xs:sequence\&gt;
 
-</xs:complexType\>
+\&lt;/xs:complexType\&gt;
 
-<xs:complexType name=3D"PdfSignatureInfoType">
+\&lt;xs:complexType name=&quot;PdfSignatureInfoType&quot;\&gt;
 
-       <xs:all\>
+\&lt;xs:all\&gt;
 
-            = <xs:element name=3D"PdfAttributes" type=3D"css:PdfAttributesType"/>
+\&lt;xs:element name=&quot;PdfAttributes&quot; type=&quot;css:PdfAttributesType&quot;/\&gt;
 
-            = <xs:element name=3D"Appearance" type=3D"css:Appeara= nceType" minOccurs=3D"0"/>
+\&lt;xs:element name=&quot;Appearance&quot; type=&quot;css:AppearanceType&quot; minOccurs=&quot;0&quot;/\&gt;
 
-       </xs:all\>
+\&lt;/xs:all\&gt;
 
-       <xs:attribute name=3D"= name" type=3D"xs:string" use=3D"optional"/>
+\&lt;xs:attribute name=&quot;name&quot; type=&quot;xs:string&quot; use=&quot;optional&quot;/\&gt;
 
-       <xs:attribute name=3D"order" type=3D"xs:integer" use=3D"optional"/>
+\&lt;xs:attribute name=&quot;order&quot; type=&quot;xs:integer&quot; use=&quot;optional&quot;/\&gt;
 
-</xs:complexType\>
+\&lt;/xs:complexType\&gt;
 
-&l= t;css:PdfTemplate\>\= és l’element arrel de qualsevol plantilla de signatura PDF. Aquest element consisteix en una seqüència d’elements <css:PdfDocument\>\= , cadascun dels quals defineix una variació de la plantilla (és a dir, plantilles diferents en la pràctica). D’aquesta manera, quan s’hagi de signar un document PDF, fent ús d’una plantilla determinada, s’utilitzarà la “variant” que contingui l’element /css:PdfTemplate/css:PdfDocument, l’a= tribut /css:PdfTemplate/css:PdfDocument/@title del = qual coincideixi amb el títol del document PDF. És a dir, amb el valor que estigui associat a la clau Title del diccionari d’informació d= el document. Cal tenir en compte que sempre hi hauran correspondències (= matching) entre un document PDF i un element /css:PdfTemplate/css:PdfDocument que \= manqui de l’atribut title.=
+\&lt;css:PdfTemplate\&gt; és l&#39;element arrel de qualsevol plantilla de signatura PDF. Aquest element consisteix en una seqüència d&#39;elements \&lt;css:PdfDocument\&gt;, cadascun dels quals defineix una variació de la plantilla (és a dir, plantilles diferents en la pràctica). D&#39;aquesta manera, quan s&#39;hagi de signar un document PDF, fent ús d&#39;una plantilla determinada, s&#39;utilitzarà la &quot;variant&quot; que contingui l&#39;element /css:PdfTemplate/css:PdfDocument, l&#39;atribut /css:PdfTemplate/css:PdfDocument/@title del qual coincideixi amb el títol del document PDF. És a dir, amb el valor que estigui associat a la clau Title del diccionari d&#39;informació del document. Cal tenir en compte que sempre hi hauran correspondències (matching) entre un document PDF i un element /css:PdfTemplate/css:PdfDocument que manqui de l&#39;atribut title.
 
-Per un altre costat, en aquells casos = en que:
+Per un altre costat, en aquells casos en que:
 
-o&nb= sp;  El títol del document PDF no coincideixi amb l'atribut title de cap dels elements /css:PdfTemplate /css:Pdf= Document de la plantilla.
+- El títol del document PDF no coincideixi amb l&#39;atribut title de cap dels elements /css:PdfTemplate/css:PdfDocument de la plantilla.
+- I, a més, no hi hagi cap element /css:PdfTemplate /css:PdfDocument que no tingui l&#39;atribut title.
 
-o&nb= sp;  I, a més, no hi hagi cap element /css:PdfTemplate /css:PdfDo= cument que no tingui l'atribut title.
+Aleshores, s&#39;haurà d&#39;utilitzar la plantilla de signatures PDF per defecte, és a dir, la plantilla urn:Safelayer:TWS:policies:common:templates:pdf:default. Aquesta plantilla es descriu més endavant en Plantilla de signatures PDF per defecte.
 
-Aleshores, s'haurà d'utilitzar la pl= antilla de signatures PDF per defe= cte, és a dir, la planti= lla urn:Safelayer:TWS:policies:common:template= s:pdf:default. Aquesta plantilla es descriu més endavant en Plantilla= de signatures PDF per defecte.
+- Cada element \&lt;css:PdfDocument\&gt; conté un nombre il·limitat d&#39;elements \&lt;css:SignatureField\&gt;, cadascun dels quals descriu els atributs i l&#39;aparença d&#39;un camp de signatura del document PDF.
+- Cada element \&lt;css:SignatureField\&gt; conté els següents elements:
 
-o&nb= sp;  Cada element <css:PdfDocument\> cont= é un nombre il·limitat d'elemen= ts <css:SignatureField\>, cadascun dels quals descriu els atributs i l'aparença d'un camp de signatura del docum= ent PDF.
+- \&lt;css:PdfAttributes\&gt;, Que determina les característiques de la signatura. Vegi Element \&lt;css:PdfAttributes\&gt; per obtenir més detalls sobre aquest element.
 
-o   Cada element &l= t;css:SignatureField\> conté els següents elements:
+- \&lt;css:Appearance\&gt;, Que determina l&#39;aparença &quot;visual&quot; de la signatura. Vegi Element \&lt;css:Appearance\&gt; per a més detalls sobre aquest element. Si aquest element s&#39;omet, la signatura que es generi serà invisible.
 
-               \-    <css:PdfAttribut= es\>, Que determina les característiques de la signatura. Ve= gi Element        =         <css:PdfAttributes\> per = obtenir més detalls sobre aquest element.
+- I els següents atributs:
 
-   =             \-   <css:Appearance<= /span>\>, Que determina l'aparença "visual" de = la signatura. Vegi Element          =       &l= t;css:Appearance\><= span lang=3DEN-GB style=3D'font-family:"Calibri",sans-serif;mso-bidi-font-family= :Arial; mso-ansi-language:EN-GB'> per a més detalls sobre aquest element. Si aquest element s'omet, la signat= ura              que es g= eneri serà invisible.
+- //SignatureField/@name, que identifica (pel seu nom) el camp de signatura del document PDF a què es refereixen els atributs i l&#39;aparença que defineix aquest element.
 
-o&nb= sp;  I els següents atributs:
+- //SignatureField/@order, que identifica (pel seu nombre d&#39;ordre) el camp de signatura del document PDF a què es refereixen els atributs i l&#39;aparença que defineix aquest element, tenint en compte que el valor 0 identifica el &quot;següent&quot; camp de signatura (sigui quin sigui el seu número d&#39;ordre).
 
-   =             \-    //SignatureField/@name, que identifica (pel seu nom) el camp de signatura= del document            <= /span>PDF a què es refereixen\= els atributs i l'aparença que defineix <= span class=3DSpellE>aquest element.
+L&#39;element /css:PdfTemplate/css:PdfDocument/css:SignatureField que s&#39;utilitzarà per establir els atributs i l&#39;aparença de la signatura PDF es determinarà de la manera següent:
 
-   =             \-    //SignatureField/@order, que identifica (pel seu\= nombre d'ordre) el camp de signa= tura del        document= PDF a què es refereixen els atributs i l'aparença que defineix <= span class=3DSpellE>aquest element, tenint en            = compte que el valor 0 identifica el "següent" camp de signatura (sigui quin sigui el seu número           = d'ordre).
+a) Si en la petició s&#39;ha especificat el nom del camp de signatura (element //DSS:OptionalInputs/css:StoreSignatureField) aleshores s&#39;utilitzarà l&#39;element /css:PdfTemplate/css:PdfDocument/css:SignatureField l&#39;atribut //SignatureField/@name del qual contingui el mateix valor.
 
-L'element /css:PdfTemplate/css:PdfDoc= ument/css:SignatureField que \= s'utilitzarà per establir els atributs<= /span> i l'aparença de la signatura PDF es determinarà de la manera següent:
+b) Si l&#39;atribut //SignatureField/@name no és present, la petició no conté l&#39;element //DSS:OptionalInputs/css:StoreSignatureField, o bé no hi ha coincidència entre un i altre, llavors s&#39;ha d&#39;utilitzar l&#39;element /css:PdfTemplate/css:PdfDocument/css:SignatureField l&#39;atribut //SignatureField/@order del qual sigui 0 o coincideixi amb el resultat d&#39;incrementar (en un) el nombre de camps de signatura que contingui el document PDF.
 
-a) Si en la petició\= s'ha especificat el nom del camp de signatura= (element //DSS:OptionalInputs/css:StoreSignatureField) aleshores s'utilitzarà l'element /css:PdfTemplate/css:PdfDocument<= /span>/css:SignatureField l'at= ribut //SignatureField/@name del qual contingui = el mateix valor.
+c) Si no s&#39;ha pogut seleccionar cap element /css:PdfTemplate/css:PdfDocument/css:SignatureField en base als criteris anteriors, llavors cal utilitzar el (únic) camp /css:PdfTemplate/css:PdfDocument/css:SignatureField de la plantilla per defecte del sistema (és a dir, la plantilla urn:Safelayer:TWS:policies:common:templates:pdf:default). Aquesta plantilla es descriu seguidament.
 
-b) Si l'atribut //Signat= ureField/@name no és present, la petició no conté l'element //DSS:OptionalInputs/css:Sto= reSignatureField, o bé no hi ha coincidència entre un i altre, llavors<= /span> s'ha d'utilitzar l'element /css:PdfTemplate/css:PdfDocument<= /span>/css:SignatureField l'at= ribut //SignatureField/@order del qual sigui 0 o = coincideixi amb el resultat d'incrementar (e= n un) el nombre de camps de signatura que contingui el document PDF.
+**Plantilla de signatures PDF per defecte**
 
-c) Si no s'ha pogut seleccionar cap element /css:PdfTemplate/css:PdfDocument/css:SignatureFie= ld en base als criteris <= span class=3DSpellE>anteriors, llavors cal utilitzar el (únic) camp = /css:Pdf= Template/css:PdfDocument/css:SignatureFie= ld de la plantilla per defecte del sistema (és a dir, la plantilla urn:Safe= layer:TWS:policies:common:templates:pdf:default). Aquesta plantilla es descriu seguidament.
+TrustedX conté una plantilla per defecte per realitzar signatures PDF, que s&#39;identifica per urn:Safelayer:TWS:policies:common:templates:pdf:default i que té la següent definició:
 
-**Plant= illa de signatures PDF per defe= cte**
+\&lt;css:PdfTemplate xmlns:css=&quot;http://www.safelayer.com/TWS&quot;\&gt;
 
-TrustedX cont= é una plantilla per defecte per \= realitzar signatures PDF, que s'iden= tifica per urn:Safelayer:TWS:policies:common:templates:pdf:default i que té la següent definici= ó:
+\&lt;css:PdfDocument\&gt;
 
-<css:PdfTemplate xmlns:css\=3D"http://www.safelayer.com/TWS&= quot;>
+\&lt;css:SignatureField\&gt;
 
-       <css:PdfDocument\>
+\&lt;css:PdfAttributes\&gt;
 
-            = <css:SignatureField\>
+\&lt;css:signatureAlg\&gt;DETACHED\&lt;/css:signatureAlg\&gt;
 
-            =         <css:PdfAttributes\>\=
+\&lt;css:validationMethod\&gt;PPKMS\&lt;/css:validationMethod\&gt;
 
-            =               <css:signatureAlg\>DETACH= ED</css:signatureAlg\>
+\&lt;css:signaturePosition\&gt;LAST\&lt;/css:signaturePosition\&gt;
 
-            =               <css:validationMethod\>PP= KMS</css:validationMethod\>
+\&lt;/css:PdfAttributes\&gt;
 
-            =                <css:signaturePosition\>LAST</css:signaturePosition\>
+\&lt;/css:SignatureField\&gt;
 
-            =         </css:PdfAttributes\>\=
+\&lt;/css:PdfDocument\&gt;
 
-            = </css:SignatureField\>
+\&lt;/css:PdfTemplate\&gt;
 
-       </css:PdfDocument\>
+On es pot observar que, quan es genera una signatura en un document PDF, utilitzant la plantilla per defecte de TrustedX, aquesta signatura tindrà les següents característiques:
 
-</css:PdfTemplate\>
+- Serà invisible i s&#39;ubicarà a l&#39;última pàgina.
+- El seu format serà el d&#39;una signatura PKCS#7 de tipus detached. És a dir, s&#39;ha d&#39;associar el valor adbe.pkcs.detached a la clau _SubFilter_ del diccionari de la signatura.
+- El signature-handler que, de manera preferent, s&#39;ha d&#39;utilitzar per a verificar la signatura és el de Microsoft. És a dir, s&#39;ha d&#39;associar el valor Adobe.PPKMS a la clau Filter del diccionari de la signatura.
 
-On es p= ot observar que, quan es genera una signatura en u= n document PDF, utilitzant = la plantilla per defecte de T= rustedX, aquesta signatura tindrà les següents característiques:
+**Exemple de plantilla de signatures PDF**
 
-o&nb= sp;  Serà<= /span> invisible i s'ubicarà a l'= última pàgina.
+El següent codi XML és un exemple de plantilla de signatures PDF:
 
-o&nb= sp;  El seu format serà el d'una signatura PKCS#7 de tipus<= /span> detached. És a dir, s'ha d'associar el valor adbe.pkcs.detached= a la clau _SubFilter_ del diccionari de = la signatura.
+\&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?\&gt;
 
-o&nb= sp;  El signature-handler que, de manera preferent, s'ha<= /span> d'utilitzar per a verificar la signatura és el de Microsoft. És a = dir, s'ha d'associar el valor Adobe.PPKMS a la \= clau Filter del diccionari de la signatura.
+\&lt;css:PdfTemplate xmlns:css=&quot;http://www.safelayer.com/TWS&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;\&gt;
 
-**Exemple** **de plantilla de signature= s PDF**
+\&lt;css:PdfDocument title=&quot;Document1&quot;\&gt;
 
-El següent codi XML és un exemple de plantilla de signatur= es PDF:
+\&lt;css:SignatureField name=&quot;Signature1&quot;\&gt;
 
-<?xml version=3D"1.0" encoding=3D"UTF-8"?>
+\&lt;css:PdfAttributes\&gt;
 
-<css:PdfTemplate xmlns:css\=3D"http://www.safelayer.com/TWS&= quot; xmlns:xsi\=3D"http://www.w3.org/2001/XMLSchema-in= stance">
+\&lt;css:signatureAlg\&gt;SHA1\&lt;/css:signatureAlg\&gt;
 
-       <css:PdfDocument title=3D"Document1">
+\&lt;css:validationMethod\&gt;PPKMS\&lt;/css:validationMethod\&gt;
 
-            = <css:SignatureField name=3D"Signature1">
+\&lt;css:signaturePosition\&gt;ADDLAST\&lt;/css:signaturePosition\&gt;
 
-            =         <css:PdfAttributes\>\=
+\&lt;css:params\&gt;
 
-            =               <css:signatureAlg\>SHA1&l= t;/css:signatureAlg\>
+\&lt;css:location\&gt;Barcelona\&lt;/css:location\&gt;
 
-            =               <css:validationMethod\>PP= KMS</css:validationMethod\>
+\&lt;css:reason\&gt;Author\&lt;/css:reason\&gt;
 
-            =                <css:signaturePosition\>ADDLAST</css:signaturePosition\>
+\&lt;css:contactInfo\&gt;+345818090\&lt;/css:contactInfo\&gt;
 
-            =               <css:params\><= /span>
+\&lt;/css:params\&gt;
 
-            =                      <css:location\>Barcelona&= lt;/css:location\>
+\&lt;/css:PdfAttributes\&gt;
 
-            =                      <css:reason\>Author</<= span class=3DSpellE>css:reason\>
+\&lt;/css:SignatureField\&gt;
 
-            =                      <css:contactInfo\>+345818090</css:contactInfo\>
+\&lt;css:SignatureField order=&quot;0&quot;\&gt;
 
-            =               </css:params\><= /span>
+\&lt;css:PdfAttributes\&gt;
 
-            =         </css:PdfAttributes\>\=
+\&lt;css:signatureAlg\&gt;SHA1\&lt;/css:signatureAlg\&gt;
 
-            = </css:SignatureField\>
+\&lt;css:validationMethod\&gt;PPKMS\&lt;/css:validationMethod\&gt;
 
-            = <css:SignatureField order=3D"0">
+\&lt;css:signaturePosition\&gt;ADDLAST\&lt;/css:signaturePosition\&gt;
 
-            =         <css:PdfAttributes\>\=
+\&lt;css:params\&gt;
 
-            =               <css:signatureAlg\>SHA1&l= t;/css:signatureAlg\>
+\&lt;css:location\&gt;Barcelona\&lt;/css:location\&gt;
 
-            =               <css:validationMethod\>PP= KMS</css:validationMethod\>
+\&lt;css:reason\&gt;Author\&lt;/css:reason\&gt;
 
-            =                <css:signaturePosition\>ADDLAST</css:signaturePosition\>
+\&lt;css:contactInfo\&gt;+345818090\&lt;/css:contactInfo\&gt;
 
-            =               <css:params\><= /span>
+\&lt;/css:params\&gt;
 
-            =                      <css:location\>Barcelona&= lt;/css:location\>
+\&lt;/css:PdfAttributes\&gt;
 
-            =                      <css:reason\>Author</<= span class=3DSpellE>css:reason\>
+\&lt;css:Appearance\&gt;
 
-            =                      <css:contactInfo\>+345818090</css:contactInfo\>
+\&lt;css:Rect x0=&quot;31&quot; y0=&quot;200&quot; x1=&quot;557&quot; y1=&quot;40&quot;/\&gt;
 
-            =               </css:params\><= /span>
+\&lt;css:Background\&gt;
 
-            =         </css:PdfAttributes\>\=
+\&lt;css:image encodeType=&quot;base64&quot;\&gt;
 
-            =         <css:Appearance\>
+\&lt;css:data\&gt;/9j/4...Q==\&lt;/css:data\&gt;
 
-            =               <css:Rect x0=3D"31&quo= t; y0=3D"200" x1=3D"557" y1=3D"40"/>
+\&lt;css:imageSize width=&quot;400&quot; height=&quot;40&quot;/\&gt;
 
-            =               <css:Background\>
+\&lt;css:position x=&quot;50&quot; y=&quot;35&quot;/\&gt;
 
-            =                      <css:image encodeType\=3D"base64">
+\&lt;/css:image\&gt;
 
-            =                            <css:data\>/9j/4...Q=3D=3D</\= css:data\>
+\&lt;/css:Background\&gt;
 
-            =                            <css:imageSize width=3D"400" height=3D"40"/>
+\&lt;css:Foreground\&gt;
 
-            =                            <css:position x=3D"50&= quot; y=3D"35"/>
+\&lt;css:image encodeType=&quot;base64&quot;\&gt;
 
-            =                      </css:image\>
+\&lt;css:data\&gt;/9j/...ZCg==\&lt;/css:data\&gt;
 
-            =               </css:Background\>
+\&lt;css:imageSize width=&quot;80&quot; height=&quot;30&quot;/\&gt;
 
-            =               <css:Foreground\>
+\&lt;css:position x=&quot;223&quot; y=&quot;1&quot;/\&gt;
 
-            =                      <css:image encodeType\=3D"base64">
+\&lt;/css:image\&gt;
 
-            =                            <css:data\>/9j/...ZCg\=3D= =3D</css:data\>
+\&lt;css:text\&gt;
 
-            =                            <css:imageSize width=3D&quo= t;80" height=3D"30"/>
+\&lt;css:properties color=&quot;0 0 0&quot; fontSize=&quot;5&quot;/\&gt;
 
-            =                            <css:position x=3D"223= " y=3D"1"/>
+\&lt;css:position x=&quot;150&quot; y=&quot;35&quot;/\&gt;
 
-            =                      </css:image\>
+\&lt;css:SignatureInfos\&gt;
 
-            =                      <css:text\>
+\&lt;css:signatureInfo title=&quot;Autor de la firma: &quot; id=&quot;Subject&quot;/\&gt;
 
-            =                            <css:properties color\=3D"0 0 0" fontSize\=3D"5"/>
+\&lt;css:signatureInfo title=&quot;Emisor del certificado: &quot; id=&quot;Issuer&quot;/\&gt;
 
-            =                            <css:p= osition x=3D"150" y=3D"35"/>
+\&lt;css:signatureInfo title=&quot;Número de serie: &quot; id=&quot;SerialNumber&quot;/\&gt;
 
-                                       = <css:SignatureInfos\>
+\&lt;css:signatureInfo title=&quot;Razón: &quot; id=&quot;Reason&quot;/\&gt;
 
-                                       =        <css:signatureInfo title\=3D"Autor de la firma: " id=3D"Subject"/>
+\&lt;css:signatureInfo title=&quot;Localitzación: &quot; id=&quot;Location&quot;/\&gt;
 
-                                       =        <css:signatureInfo title\=3D"Emisor del certificado: " id=3D&qu= ot;Issuer"/>
+\&lt;css:signatureInfo title=&quot;Información de contacto: &quot; id=&quot;ContactInfo&quot;/\&gt;
 
-                                       =        <css:signatureInfo title\=3D"Número de serie: " id=3D"SerialNumber"/>
+\&lt;css:signatureInfo title=&quot;Fecha de firma: &quot; id=&quot;Date&quot;/\&gt;
 
-                                       =        <css:signatureInfo title\=3D"Razón: " id=3D"Reason"/&= gt;
+\&lt;/css:SignatureInfos\&gt;
 
-                                       =        <<= span class=3DGramE>css:signatureInfo title=3D"Localitzación: " id=3D"Location"/>
+\&lt;/css:text\&gt;
 
-            =                                   <css:s= ignatureInfo title\=3D"Información de contacto: " i= d=3D"ContactInfo"/>
+\&lt;/css:Foreground\&gt;
 
-                                       =        <css:signatureInfo title\=3D"Fecha de firma: " id=3D"Date&= quot;/>
+\&lt;/css:Appearance\&gt;
 
-                                       = </\= css:SignatureInfos\>
+\&lt;/css:SignatureField\&gt;
 
-            =                      </css:text\>
+\&lt;/css:PdfDocument\&gt;
 
-            =               </css:Foreground\>
+\&lt;css:PdfDocument\&gt;
 
-            =         </css:Appearance\>
+\&lt;css:SignatureField order=&quot;0&quot;\&gt;
 
-            = </css:SignatureField\>
+\&lt;css:PdfAttributes\&gt;
 
-       </css:PdfDocument\>
+\&lt;css:signatureAlg\&gt;SHA1\&lt;/css:signatureAlg\&gt;
 
-       <css:PdfDocument\>
+\&lt;css:validationMethod\&gt;PPKMS\&lt;/css:validationMethod\&gt;
 
-            = <css:SignatureField order=3D"0">
+\&lt;css:signaturePosition\&gt;LAST\&lt;/css:signaturePosition\&gt;
 
-            =         <css:PdfAttributes\>\=
+\&lt;/css:PdfAttributes\&gt;
 
-            =               <css:signatureAlg\>SHA1&l= t;/css:signatureAlg\>
+\&lt;/css:SignatureField\&gt;
 
-            =               <css:validationMethod\>PP= KMS</css:validationMethod\>
+\&lt;/css:PdfDocument\&gt;
 
-            =                <css:signaturePosition\>LAST</css:signaturePosition\>
+\&lt;/css:PdfTemplate\&gt;
 
-            =         </css:PdfAttributes\>\=
+# 5Gestió de dades de volum gran
 
-            = </css:SignatureField\>
+Si els documents XML inclouen elements amb valors de volum gran, Axis experimenta problemes de rendiment. Per pal·liar aquests problemes, podem guardar en arxiu aquests valors, deixant a l&#39;XML una referència a aquest arxiu. D&#39;aquesta manera, el tamany de l&#39;XML que gestiona Axis es redueix considerablement. Més endavant, en la capa de transport, es substitueixen les referències per les dades guardades en arxiu.
 
-       </css:PdfDocument\>
+Per defecte, les dades no es tracten com a arxiu.
 
-</css:PdfTemplate\>
+## 5.1Gestió de peticions amb dades de gran tamany
 
-5      = Gestió de dades de volum gran
+Quan el document a signar tingui un volum considerable, i cal enviar-lo sencer en la petició de signatura, podem experimentar problemes de rendiment d&#39;Axis.
 
-Si els documents XML inclouen elements amb valors de volum gran, Axis experimenta problemes de rendiment. Per pal·liar= aquests problemes, podem guardar en arxiu aquests valors, deixant a l’XML una referència a aquest arxiu. D’aquesta manera, = el tamany de l’XML que gesti= ona Axis es redueix considerablemen= t. Més endavant, en la= capa de transport, es substitueixe= n les referències per les dades guardades en arxiu.
-
-Per defecte, les da= des no es tracten com a arxiu.
-
-5.1      Gestió de peticions amb dades de gran tamany
------------------------------------------------------
-
-Quan el d= ocument a signar tingui un volum considerable, i cal enviar-lo sencer en la petició de signatura, podem experimentar problemes de \= rendiment d’Axis.
-
-La classe SmartSig= nRequest ofereix certs mètodes que permeten gestionar com= a arxius les dades de gran volum.
+La classe SmartSignRequest ofereix certs mètodes que permeten gestionar com a arxius les dades de gran volum.
 
 Mètodes:
 
-o   setInputBase64Data(fileName, format): = Per documents binaris.
-
-o   setInputXmlBase64(fileName, format): Per documents XML.
-
-o   setInputPdfBase64Data(<= span class=3DSpellE>fileName, format): = Per documents PDF.
+- setInputBase64Data(fileName, format): Per documents binaris.
+- setInputXmlBase64(fileName, format): Per documents XML.
+- setInputPdfBase64Data(fileName, format): Per documents PDF.
 
 On:
 
 fileName és el nom del fitxer que conté les dades a signar
 
-format és el format de les guard= ades en arxiu, i que pot prendre els següents valors:
+format és el format de les guardades en arxiu, i que pot prendre els següents valors:
 
-   =             \-    Constants.SourceFormat.BASE64
+- Constants.SourceFormat.BASE64
 
-               \-    Constants.Sourc= eFormat.RAW
+- Constants.SourceFormat.RAW
 
-La classe SmartSig= nRequest també ofereix certs\= mètodes que permeten que = en la resposta les dades de gran volum= puguin tractar-se també com a arxius:
+La classe SmartSignRequest també ofereix certs mètodes que permeten que en la resposta les dades de gran volum puguin tractar-se també com a arxius:
 
-o   enableSignatureBase64(format): Per signatures binàries.
-
-o   enableSignatureXmlBase64(format): Per signatures XML.
-
-o   enableDocumentW= ithSignaturePdf(f= ormat): Per documents PDF signats.
-
-o   enableDocumentWithSignatureXmlBase64(format): Per signatures XML enveloped.<= /p>
+- enableSignatureBase64(format): Per signatures binàries.
+- enableSignatureXmlBase64(format): Per signatures XML.
+- enableDocumentWithSignaturePdf(format): Per documents PDF signats.
+- enableDocumentWithSignatureXmlBase64(format): Per signatures XML enveloped.
 
 On:
 
-format és el format de les guard= ades en arxiu, i que pot prendre els següents valors:
+format és el format de les guardades en arxiu, i que pot prendre els següents valors:
 
-   =             \-    Constants.SourceFormat.BASE64
+- Constants.SourceFormat.BASE64
 
-               \-    Constants.Sourc= eFormat.RAW
+- Constants.SourceFormat.RAW
 
-Els següents mètodes deshabilitarien l’habilitat amb els corresponents mètodes anteriors:
+Els següents mètodes deshabilitarien l&#39;habilitat amb els corresponents mètodes anteriors:
 
-o   disableSignatureBase64(format): Per signatures binàries.
+- disableSignatureBase64(format): Per signatures binàries.
+- disableSignatureXmlBase64(format): Per signatures XML.
+- disableDocumentWithSignaturePdf(format): Per documents PDF signats.
+- disableDocumentWithSignatureXmlBase64(format): Per signatures XML enveloped.
 
-o   disableSignatureXmlBase64(format): Per signatures XML.
+En fer un _disable_ després d&#39;un _enable_, deshabilitarem el tractament com a arxiu de les dades corresponents. Recordem que per defecte el tractament com a arxiu està deshabilitat.
 
-o   disableDocument= WithSignaturePdf(f= ormat): Per documents PDF signats.
+**NOTA 1** : En cas de que habilitem la gestió de dades de la resposta en fitxer, aquests es guardaran al directori indicat al paràmetre Response.savePath de la configuració de l&#39;SmartWrapper. Si aquest paràmetre no és present, els arxius es guardaran al directori d&#39;execució.
 
-o   disableDocumentWithSignatureXmlBase64(format): Per signatures XML enveloped.<= /p>
+**NOTA 2** : Si volem que les dades d&#39;entrada s&#39;agafin directament d&#39;un directori base concret, cal indicar el paràmetre Request.loadPath a la configuració d&#39;SmartWrapper. Si no s&#39;especifica, el directori base serà el d&#39;execució.
 
-En fer un _disable_ <= span class=3DSpellE>després d’un _enable_, deshabilitarem el tractament com a= arxiu de les dades corresponents= . Recordem que per defecte el tractament com a arxiu està deshabilitat.
+## 5.2Gestió de respostes amb dades de gran tamany
 
-**NOTA 1**: En cas de que habilitem la gestió de da= des de la resposta en fitxer, aquests es guardaran al director= i indicat al paràmetre Response= .savePath de la configuració de l’Smart= Wrapper. Si aquest paràmetre\= no és present, els arxius es guardaran al dir= ectori d’execució.
+Si s&#39;ha habilitat en la petició de signatura el tractament com a fitxers de dades de la resposta, en cas de voler recuperar aquestes dades per codi, haurem de fer-ho mitjançant els mètodes que veurem a continuació.
 
-**NOTA 2**: Si volem que les = dades d’entrada s’agafin directament d’un directori base concret, c= al indicar el paràmetre Request.loadPath a la configuració d’SmartWra= pper. Si no s’especifica, el dir= ectori base serà el d’execució.
-
-5.2      Gestió de respostes amb dades de gran tamany
------------------------------------------------------
-
-Si s’ha habilitat en la petició de signatura el tractament co= m a fitxers de dades de la r= esposta, en cas de voler rec= uperar aquestes dades per codi, = haurem de fer-ho mitjançant els mètodes que veurem a continuació.
-
-La classe SmartSig= nResponse ofereix doncs mètodes que permeten obtenir les dades de la resposta quan<= /span> aquestes s’han gestionat com a arxius. En aquest cas es = tractarà de signatures o = documents signats.
+La classe SmartSignResponse ofereix doncs mètodes que permeten obtenir les dades de la resposta quan aquestes s&#39;han gestionat com a arxius. En aquest cas es tractarà de signatures o documents signats.
 
 Mètodes:
 
-o&nb= sp;  getDocumentWithSignaturePdf(<= /span>): Per= obtenir la referència a u= n document PDF signat.\=
+- getDocumentWithSignaturePdf(): Per obtenir la referència a un document PDF signat.
+- getDocumentWithSignatureXml(): Per obtenir la referència a un document que conté la referència a una signatura XML enveloped.
+- getSignatureBase64(): Per obtenir la referència a una signatura binària.
+- getSignatureXml(): Per obtenir la referència a una signatura XML.
 
-o&nb= sp;  getDocumentWithSignatureXml(<= /span>):  Per obtenir\= la referència a un document = que conté la referència a una signatura XML enveloped.
+Quan parlem de referència volem dir el nom del fitxer al directori de sortida.
 
-o&nb= sp;  getSignatureBase64(): Per obtenir la referència<= /span> a una signatura binària.
+A partir de els referències obtingudes amb els mètodes anteriors, podem recuperar per codi el contingut dels fitxers que contenen les dades de la resposta:
 
-o&nb= sp;  getSignatureXml\= (<= /span>): Per= obtenir la referència a u= na signatura XML.
-
-Quan parl= em de referència volem\= dir el nom del fitxer al directori de sortida.
-
-A partir de els referències obtingudes amb els mètodes anteriors, podem re= cuperar per codi el contingut dels fitxers que contenen les dades de la respost= a:
-
-o   ge= tReferenceFileContent(String reference, boolean deleteFile)
+- getReferenceFileContent(String reference, boolean deleteFile)
 
 On:
 
-o&nb= sp;  reference és el nom del fitxer.
+- reference és el nom del fitxer.
+- deleteFile és un booleà amb el qual podem esborrar el document guardat en fitxer:
 
-o&nb= sp;  deleteFile és un booleà amb el qual podem esborrar el document guardat en fitxer:
+- true: L&#39;arxiu que conté el valor, s&#39;esborrarà després de llegir el seu contingut
 
-   =             \-   true: L’arxiu que conté= el valor, s’esborrarà després= de llegir el seu contingut
+- false: L&#39;arxiu no s&#39;esborrarà.
 
-   =             \-   false: L’arxiu no s’esborrarà.
+## 5.3Exemple de gestió en arxius per generació d&#39;una signatura XAdES-BES enveloping
 
-  
-
-\=  
-
-5.3      E= xemple de gestió en arxius per generació d’una signatura XAdES\-BES= enveloping
--------------------------------------------------------------------------------------------
-
-import org.apache\= .axis.encoding.Base64;
+import org.apache.axis.encoding.Base64;
 
 import org.apache.axis.message.SOAPHeaderElement;
 
 import org.apache.commons.configuration.Configuration;
 
-import utils.\*; <= o:p>
+import utils.\*;
 
 import com.safelayer.trustedx.client.smartwrapper.\*;
 
-public class CreateSign= ature\_XAdES\_BES\_Enveloped\_BigFile {
+public class CreateSignature\_XAdES\_BES\_Enveloped\_BigFile {
 
-       private static final String path\_in =3D "in/docs\_to\_sign/BigFiles/";
+private static final String path\_in = &quot;in/docs\_to\_sign/BigFiles/&quot;;
 
-       private static final String path\_out =3D "out/Sign= atures/BigFiles/";
+private static final String path\_out = &quot;out/Signatures/BigFiles/&quot;;
 
-       private static final String filename =3D "Demo-BigFile.xml\= ";
+private static final String filename = &quot;Demo-BigFile.xml&quot;;
 
-       public static void main(String\[\] a= rgs) {
+public static void main(String[] args) {
 
-            = try {
+try {
 
-            =         Configuration conf =3D TrustedXConfiguration.getConfiguration\= ();
+Configuration conf = TrustedXConfiguration.getConfiguration();
 
-            =         String host =3D conf.getString("host");
+String host = conf.getString(&quot;host&quot;);
 
-            =         String distinguishedName =3D conf.getString("disti= nguishedname");
+String distinguishedName = conf.getString(&quot;distinguishedname&quot;);
 
-            =         String dipositari =3D conf.getString("dipositari");
+String dipositari = conf.getString(&quot;dipositari&quot;);
 
-            =         String rol =3D conf.getString("rol");
+String rol = conf.getString(&quot;rol&quot;);
 
-            =         // Definition of Signature Request endpoint
+// Definition of Signature Request endpoint
 
-            =         SmartSignRequest ssr =3D = new SmartSignRequest(host);
+SmartSignRequest ssr = new SmartSignRequest(host);
 
-            =         // Add customized header elements for SOAP
+// Add customized header elements for SOAP
 
-            =         Stub stub =3D (Stub) ssr.getStub();
+Stub stub = (Stub) ssr.getStub();
 
-            =         stub.setHeader(null, "= ;Rol", rol);
+stub.setHeader(null, &quot;Rol&quot;, rol);
 
-            =         stub.setHeader(null, "= ;Dipositari", dipositari);
+stub.setHeader(null, &quot;Dipositari&quot;, dipositari);
 
-            =         // XML Signature (XAdES)
+// XML Signature (XAdES)
 
-            =         ssr.setProfile(Constants.Profile.XADES);
+ssr.setProfile(Constants.Profile.XADES);
 
-            =         // Referència al fitxer que conté les dades a signar
+// Referència al fitxer que conté les dades a signar
 
-                    // Paràmetres: path (codificat en Base64) del fitxer<= /span> + tipus de dades del fitxer<= /span> (Raw o Base64)
+// Paràmetres: path (codificat en Base64) del fitxer + tipus de dades del fitxer (Raw o Base64)
 
-                    ssr.setInputXm= lBase64File(Base64.encode((path\_in + filename).getBytes()), Constants.SourceFormat.RAW);
+ssr.setInputXmlBase64File(Base64.encode((path\_in + filename).getBytes()), Constants.SourceFormat.RAW);
 
-            =         // Habilitem la gestió en arxiu de la sig= natura en la resposta
+// Habilitem la gestió en arxiu de la signatura en la resposta
 
-                 ssr.enableDocumentWithSignatureXmlBase64File(Constants.SourceFormat.RAW);
+ssr.enableDocumentWithSignatureXmlBase64File(Constants.SourceFormat.RAW);
 
-            =         // XAdES signature form
+// XAdES signature form
 
-            =         ssr.setSignatureFormat(Constants.SignatureFormat.BES);
+ssr.setSignatureFormat(Constants.SignatureFormat.BES);
 
-            =         // Signature Placement
+// Signature Placement
 
-            =        ssr.setSignatur= ePlacement(Constants.SignaturePlacement.ENVELOPED);
+ssr.setSignaturePlacement(Constants.SignaturePlacement.ENVELOPED);
 
-            =         ssr.setXmlEnvelopedXPathAfter("//\*\[local-name()= =3D'ssc'\]//\*\[local-name()=3D'description'\]");
+ssr.setXmlEnvelopedXPathAfter(&quot;//\*[local-name()=&#39;ssc&#39;]//\*[local-name()=&#39;description&#39;]&quot;);
 
-            =         // Key selection using Distinguished Name
+// Key selection using Distinguished Name
 
-            =         ssr.setKeySubjectName(distinguishedName);
+ssr.setKeySubjectName(distinguishedName);
 
-            =         // Sending request
+// Sending request
 
-            =         SmartSignResponse ssrs = =3D ssr.send();
+SmartSignResponse ssrs = ssr.send();
 
-            =         // Retrieveing signature
+// Retrieveing signature
 
-            =         if (UtilTrustedX.checkSW(ssrs.getResultMajor(), ssr= s.getResultMinor(), ssrs.getResultMessage())) { <= /p>
+if (UtilTrustedX.checkSW(ssrs.getResultMajor(), ssrs.getResultMinor(), ssrs.getResultMessage())) {
 
-            =               String destFilename =3D path\_out<= /span> + filename.substring(0, filename.lastIndexOf("."))
+String destFilename = path\_out + filename.substring(0, filename.lastIndexOf(&quot;.&quot;))
 
-            =               \+ "\_Signature\_XAdES\_BES\_Enveloped.xml"; =
++ &quot;\_Signature\_XAdES\_BES\_Enveloped.xml&quot;;
 
-            =               Util.writeBinaryFile(destFilenam= e, ssrs.getDocumentWithSignatureXml().getBytes());
-
-            =         }
-
-            = } catch (Exception e) {
-
-            =         e.printStackTrace(); \=
-
-            = }
-
-       }
+Util.writeBinaryFile(destFilename, ssrs.getDocumentWithSignatureXml().getBytes());
 
 }
 
-6      = E= xemple \= d’ús amb SoapUI
-=====================================
+} catch (Exception e) {
 
-A l’apartat de Documentació de Integració d’aquest servei es disposa d’uns exemples de SOAPUI amb un certifica= t en format pkcs#12 (pin : 1234) per realitzar l’aute= nticació al servei.
+e.printStackTrace();
 
-SoapUI és una eina per a realitzar proves d’APIs del tipus SOAP o REST. Es pot\= descarregar gratuïtament = a la web [https://www.soapui.org/](3D"https://www.soapui.org/"). Aquest breu guía ha sigut creada amb la versió SoapUI 5.3.0.
+}
 
-6.1      Importar un projecte
------------------------------
+}
 
-Obrir Soap= UI i utilitzar l’opció\= _Import_ si= tuada al menú de la part superior.
+}
 
-Seleccionar el projecte proporcionat a la web. L’eina crearà una estructura semblant a la seguent:
+# 6Exemple d&#39;ús amb SoapUI
+
+A l&#39;apartat de Documentació de Integració d&#39;aquest servei es disposa d&#39;uns exemples de SOAPUI amb un certificat en format pkcs#12 (pin : 1234) per realitzar l&#39;autenticació al servei.
+
+SoapUI és una eina per a realitzar proves d&#39;APIs del tipus SOAP o REST. Es pot descarregar gratuïtament a la web [https://www.soapui.org/](https://www.soapui.org/). Aquest breu guía ha sigut creada amb la versió SoapUI 5.3.0.
+
+## 6.1Importar un projecte
+
+Obrir SoapUI i utilitzar l&#39;opció _Import_ situada al menú de la part superior.
+
+![](RackMultipart20220630-1-6kytqz_html_73640d09d571aa40.png)
+
+Seleccionar el projecte proporcionat a la web. L&#39;eina crearà una estructura semblant a la seguent:
+
+![](RackMultipart20220630-1-6kytqz_html_ce3ad80d34ba4855.png)
 
 Els missatges SOAP disponibles són:
 
-·        Signatura amb ROL i= autenticació amb certificat
+- Signatura amb ROL i autenticació amb certificat
+- Signatura sense ROL i amb autenticació amb certificat
 
-·      =   Signatura sense ROL i <= span class=3DSpellE>amb autenticació amb certificat\=
+## 6.2Afegir certificat PKCS#12
 
-6.2      A= fegir \= certificat PKCS#12
----------------------------------------
+Per utilitzar un certificat personal per autenticar amb el servei de signatura, prémer el botó _Preferences_ situat al menú superior de l&#39;eina.
 
-Per utilitzar un certificat personal per autent= icar amb el servei de signatura, prémer el botó _Preferences_ situat al menú superior de l’eina.
+![](RackMultipart20220630-1-6kytqz_html_8f8931a27cea9830.png)
 
-A l’apartat _SSL Setting_ seleccionar el certificate PKCS#12 proporcionat i posar la contrasenya tal com s’indica a la següent figura:
+A l&#39;apartat _SSL Setting_ seleccionar el certificate PKCS#12 proporcionat i posar la contrasenya tal com s&#39;indica a la següent figura:
 
+![](RackMultipart20220630-1-6kytqz_html_bbdf99203a933d9a.png)
